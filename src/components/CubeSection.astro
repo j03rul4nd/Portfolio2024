@@ -1,0 +1,156 @@
+---
+
+---
+<div id="CubeSection"></div>
+<style>
+  #CubeSection{
+      height: 174.859px;
+      width: 100%;
+      position: relative;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+  }
+  #CubeSection canvas{
+      width: 100%;
+      height: 174.859px;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+  }
+  </style>   
+<script>
+  import * as THREE from 'three';  
+ // import { OrbitControls } from '../addons/OrbitControls.js'  
+
+window.addEventListener("load", init);
+
+function init() {
+
+    const canvasContainer = document.getElementById('CubeSection');
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x050505);
+
+    const aspectRatio = canvasContainer.clientWidth / canvasContainer.clientHeight;
+    const camera = new THREE.PerspectiveCamera(65, aspectRatio, 0.1, 100);
+    const cameraSetBackDist = 7;
+    camera.position.z = cameraSetBackDist;
+
+    const light = new THREE.PointLight(0xffffff, 2);
+    light.position.set(10, 10, 10);
+    scene.add(light);
+
+    const renderer = new THREE.WebGLRenderer();
+
+    renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+    canvasContainer.appendChild(renderer.domElement);
+
+    //const controls = new OrbitControls(camera, renderer.domElement);
+
+    const geometry = new THREE.IcosahedronGeometry(1, 4);
+    const geometryPos = geometry.getAttribute("position").array;
+    const mesh = [];
+    const normalDirection = [];
+
+    for (let i = 0; i < geometryPos.length; i += 9) {
+    const geometry2 = new THREE.BufferGeometry();
+
+    const vertices = new Float32Array([
+    geometryPos[i],
+    geometryPos[i + 1],
+    geometryPos[i + 2],
+    geometryPos[i + 3],
+    geometryPos[i + 4],
+    geometryPos[i + 5],
+    geometryPos[i + 6],
+    geometryPos[i + 7],
+    geometryPos[i + 8]
+    ]);
+
+    geometry2.setAttribute("position", new THREE.BufferAttribute(vertices, 3));
+    geometry2.setAttribute("normal", new THREE.BufferAttribute(vertices, 3));
+
+    const normal = new THREE.Vector3(
+    (geometryPos[i] + geometryPos[i + 3] + geometryPos[i + 6]) / 3,
+    (geometryPos[i + 1] + geometryPos[i + 4] + geometryPos[i + 7]) / 3,
+    (geometryPos[i + 2] + geometryPos[i + 5] + geometryPos[i + 8]) / 3
+    );
+
+    normal.normalize();
+    const icoSphereGeometry = new THREE.IcosahedronGeometry(0.1, 1);
+    const material = new THREE.MeshBasicMaterial({
+    wireframe: false,
+    color: 0xc100eb
+    });
+
+    const sphere = new THREE.Mesh(icoSphereGeometry, material);
+    mesh.push(sphere);
+
+    normalDirection.push(normal);
+    }
+
+    let loopSpeed = 0;
+    let rot = 0;
+    const clock = new THREE.Clock();
+
+    const tick = () => {
+    rot += 0.3;
+    const cameraAngle = (rot * Math.PI) / 180;
+    let z = cameraSetBackDist * Math.cos(cameraAngle);
+    let x = cameraSetBackDist * Math.sin(cameraAngle);
+    camera.position.set(x, 0, z);
+    camera.lookAt(0, 0, 0);
+
+    const elapsedTime = clock.getElapsedTime();
+
+    mesh.map((spheremesh, index) => {
+    const coordinateAverageValue =
+    (normalDirection[index].x +
+    normalDirection[index].y +
+    normalDirection[index].z) / 3;
+    const addAngle = coordinateAverageValue * elapsedTime * 1;
+    const distance = 1;
+    loopSpeed += 0.002;
+    const radians = (loopSpeed * Math.PI) / 180;
+    const angle = radians + addAngle;
+    const loop = (Math.sin(angle) + 1) * distance;
+    const scale = (Math.sin(angle) + 1.1) * 0.3;
+
+    spheremesh.position.set(
+    normalDirection[index].x * loop,
+    normalDirection[index].y * loop,
+    normalDirection[index].z * loop
+    );
+    spheremesh.scale.set(scale, scale, scale);
+
+    const h = Math.abs(Math.sin(angle)) * 360;
+
+    const s = 100;
+    const l = 70;
+    const color = new THREE.Color(`hsl(${h},${s}%,${l}%)`);
+    spheremesh.material.color = color;
+
+    scene.add(spheremesh);
+    });
+    requestAnimationFrame(tick);
+    };
+    tick();
+
+    window.addEventListener("resize", () => {
+        //canvasContainer.clientWidth, canvasContainer.clientHeight
+        let canvasContainer = document.getElementById('CubeSection');
+        let width = canvasContainer.clientWidth;
+        let height = canvasContainer.clientHeight;
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+    });
+
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+
+    animate();
+    }
+
+</script>

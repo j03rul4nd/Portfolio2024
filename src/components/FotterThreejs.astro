@@ -1,0 +1,133 @@
+---
+
+---
+<div id="FotterThree"></div>
+<style>
+  #FotterThree{
+      height: 174.859px;
+      width: 100%;
+      position: relative;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+  }
+  #FotterThree canvas{
+      width: 100%;
+      height: 174.859px;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+  }
+  </style>   
+<script>
+  import * as THREE from 'three';  
+ // import { OrbitControls } from '../addons/OrbitControls.js'  
+
+window.addEventListener("load", init);
+
+
+
+let shape = 'cube';  // Inicialmente, el cubo está activo
+        let animationActive = true;  // Inicialmente, la animación está activa
+
+        function init() {
+            const canvasContainer = document.getElementById('FotterThree');
+
+            const scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x333333);
+
+            const aspectRatio = canvasContainer.clientWidth / canvasContainer.clientHeight;
+            const camera = new THREE.PerspectiveCamera(5, aspectRatio, 0.1, 100);
+            const cameraSetBackDist = 7;
+            camera.position.z = cameraSetBackDist;
+
+            const light = new THREE.PointLight(0xffffff, 2);
+            light.position.set(10, 10, 10);
+            scene.add(light);
+
+            const renderer = new THREE.WebGLRenderer();
+
+            renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+            canvasContainer.appendChild(renderer.domElement);
+
+            const geometry = new THREE.BufferGeometry();
+            const particles = 500;
+
+            const positions = new Float32Array(particles * 3);
+            const colors = new Float32Array(particles * 3);
+
+            const color = new THREE.Color();
+
+            for (let i = 0, i3 = 0; i < particles; i++, i3 += 3) {
+                const x = Math.random() * 2 - 1;
+                const y = Math.random() * 2 - 1;
+                const z = Math.random() * 2 - 1;
+
+                positions[i3] = x;
+                positions[i3 + 1] = y;
+                positions[i3 + 2] = z;
+
+                color.setHSL(Math.random(), 1.0, 0.5);
+
+                colors[i3] = color.r;
+                colors[i3 + 1] = color.g;
+                colors[i3 + 2] = color.b;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({ size: 0.04, vertexColors: true });
+            const particlesMesh = new THREE.Points(geometry, material);
+
+            scene.add(particlesMesh);
+
+            let loopSpeed = 0;
+            let rot = 0;
+            const clock = new THREE.Clock();
+
+            const tick = () => {
+                rot += 0.3;
+                const cameraAngle = (rot * Math.PI) / 180;
+                let z = cameraSetBackDist * Math.cos(cameraAngle);
+                let x = cameraSetBackDist * Math.sin(cameraAngle);
+                camera.position.set(x, 0, z);
+                camera.lookAt(0, 0, 0);
+
+                const elapsedTime = clock.getElapsedTime();
+                const scale = Math.abs(Math.sin(elapsedTime)) * 0.3 + 0.1;
+
+                particlesMesh.scale.set(scale, scale, scale);
+
+                requestAnimationFrame(tick);
+            };
+            tick();
+
+            window.addEventListener("resize", () => {
+                let width = canvasContainer.clientWidth;
+                let height = canvasContainer.clientHeight;
+                camera.aspect = width / height;
+                camera.updateProjectionMatrix();
+                renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+            });
+
+            function animate() {
+                if (animationActive) {
+                    requestAnimationFrame(animate);
+                    renderer.render(scene, camera);
+                }
+            }
+
+            animate();
+        }
+
+        function changeShape(selectedShape) {
+            shape = selectedShape;
+        }
+
+        function toggleAnimation() {
+            animationActive = !animationActive;
+        }
+
+
+
+
+</script>

@@ -1,0 +1,105 @@
+---
+import { readAll } from "../lib/markdoc/read";
+import { blog } from "../lib/markdoc/frontmatter.schema";
+import PageLayout from "../layouts/PageLayout.astro";
+import PageMeta from "../components/PageMeta.astro";
+import { SITE_TITLE } from "../config";
+
+const posts = await readAll({
+  directory: "blog",
+  frontmatterSchema: blog,
+});
+
+const sortedPosts = posts
+  .filter((p) => p.frontmatter.draft !== true)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
+
+                  //   <a href={`/blog/${post.slug}`} 
+                  //   class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 unset hover:text-text-link">
+                  //     Read more
+                  //     <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Read more</span>
+                  //     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  //         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  //     </svg>
+                  // </a>
+---
+
+<PageLayout>
+  <PageMeta title={`Blog | ${SITE_TITLE}`} slot="meta" />
+  <section slot="main">
+    <ul class="flex flex-wrap gap-4 content-start">
+      {
+        sortedPosts.map((post) => {
+          const formattedDate = new Date(
+            post.frontmatter.date
+          ).toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+          return (
+           /* <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
+
+              <div class="title">
+                {post.frontmatter.external ? (
+                  <a
+                    href={post.frontmatter.url}
+                    target="_blank"
+                    class="unset hover:text-text-link"
+                  >
+                    <span>{post.frontmatter.title}</span>
+                    <span>
+                      <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
+                    </span>
+                  </a>
+                ) : (
+                  <a
+                    href={`/blog/${post.slug}`}
+                    class="unset hover:text-text-link"
+                  >
+                    {post.frontmatter.title}
+                  </a>
+                )}
+              </div>
+
+              <div class="text-text-muted text-sm italic pt-1">
+                <time datetime={post.frontmatter.date.toISOString()}>
+                  {formattedDate}
+                </time>
+              </div>
+
+            </li>*/
+
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="rounded-t-lg" src= {post.frontmatter.ogImagePath} alt="" />
+              </a>
+              <div class="p-5">
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.frontmatter.title}</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{post.frontmatter.description }</p>
+                   
+                  <a 
+                     href={`/blog/${post.slug}`} 
+                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-blue-100 text-blue-800 me-2 rounded dark:bg-blue-900 dark:text-blue-300 dark:focus:ring-blue-800 unset hover:text-text-link">
+                       <span >Read more</span>
+                       <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                       </svg>
+                   </a>
+              </div>
+          </div>
+            
+
+
+          );
+        })
+      }
+    </ul>
+  </section>
+</PageLayout>

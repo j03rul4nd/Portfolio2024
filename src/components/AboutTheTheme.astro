@@ -1,0 +1,209 @@
+---
+import CubeSection from "./CubeSection.astro"
+---
+
+
+<div class="ListCardProyects">
+  <!-- Crad map -->
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+    <a href="/blog/MapsProject">
+        <img class="rounded-t-lg" src="/images/projects/CoverMaps.png" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="/blog/MapsProject">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Multi-Provider 3D Maps Explorer</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Switch seamlessly between Google Maps, Apple Maps and MapLibre, enjoy 3D views, real-time weather and personalised favourites.</p>
+        <a href="/blog/MapsProject" class="readmoreInfo dark:darkmodeReadMore">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+  </div>
+
+  <!-- card trheejs -->
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+    <a href="#">
+        <img class="rounded-t-lg" src="/images/projects/threejs.png" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Live Chat and Collaborative Exploration</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Thanks to Three.js and WebSockets, users can communicate via live chat as they explore and move around a shared 3D map. Watch other users' movements in real time for a unique collaborative experience.</p>
+        <a href="#" class="readmoreInfo dark:darkmodeReadMore ">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a> 
+    </div>
+  </div>
+
+  <!-- card vanillaUI -->
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem ">
+    <a href="/blog/VanillaUI">
+        <img class="rounded-t-lg" src="/images/blog/VaillaUI/CoverVanillaUI.png" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="/blog/VanillaUI">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">vanillaUI</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dependency-free, Full JS Vanilla Components for Effortless Web Magic.</p>
+        <a href="/blog/VanillaUI" class="readmoreInfo dark:darkmodeReadMore ">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a> 
+    </div>
+  </div>
+  <!-- card sphere 3d -->
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+    <a href="/blog/SphereThree">
+        <!-- <img class="rounded-t-lg" src="/images/projects/threejs.png" alt="" /> -->
+        <CubeSection class="rounded-t-lg canvaThree" client:load>
+    </a>
+    <div class="p-5">
+        <a href="/blog/SphereThree">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Psychedelic Sphere</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Moving particles with psychedelic effects using Three.Js</p>
+        <a href="/blog/SphereThree" class="readmoreInfo dark:darkmodeReadMore ">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a> 
+    </div>
+  </div>
+</div>
+<style is:global>
+  canvas{
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+  }
+</style>
+
+<style >
+  .Carditem:hover img, .Carditem:hover #CubeSection {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.Carditem img, .Carditem:hover #CubeSection {
+    transition: transform 0.3s ease-in-out;
+}
+  .Carditem{
+        flex: 1 1 calc(50% - 20px); 
+        overflow: hidden;
+    }
+
+.shadow:hover {
+    box-shadow: rgb(240 242 248 / 49%) 0px 0px 0px 2px;
+    transition: all 0.2s ease-out 0s;
+}
+.shadow{
+  transition: all 0.3s ease-out 0s;
+  will-change: box-shadow, transform;
+}
+
+  a.readmoreInfo:hover {
+    cursor: pointer;
+    transition: all 0.2s ease-out 0s;
+    box-shadow: rgb(240, 242, 248) 0px 0px 0px 5px;
+  }
+
+  a.readmoreInfo {
+      background-image:none;
+      width: fit-content;
+      height: 36px;
+      padding: 0px 12px;
+      top: 20px;
+      right: 20px;
+      border-radius: 18px;
+      box-shadow: rgb(240, 242, 248) 0px 0px 0px 2px;
+      border: none;
+      background: transparent;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      transition: all 0.3s ease-out 0s;
+      will-change: box-shadow, transform;
+  }
+  .ListCardProyects{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 480px) {
+    .ListCardProyects{
+      flex-direction: column;
+    }
+    
+  }
+</style>
+
+
+
+<div>
+  <p>UIX Case study</p>
+  <p>poner los casos de studio de figma</p>
+</div>
+
+
+
+
+<div>
+  <p>
+    Here are a few reasons why you will love this template:
+  </p>
+  <ul class="mt-5">
+    <li>
+      <strong>Newspaper.</strong>
+      A crispy <a href="https://astro.build" target="_blank">Astro</a> theme built with <a href="https://tailwindcss.com">Tailwind</a>.
+    </li>
+    <li>
+      <strong>Fast.</strong>
+      Fast by default. Blogster templates are engineered to be performant 
+      and load before you could blink, even when not cached.
+    </li>
+    <li>
+      <strong>Dark mode.</strong> Auto dark mode with a manual toggle. Hit that
+      toggle button at the top of the page and see the mode change.
+    </li>
+    <li>
+      <strong>Mobile first.</strong> Responsive and loads fast in all devices.
+    </li>
+    <li>
+      <strong>Accessible.</strong> A well thought out semantic and accessible
+      content.
+    </li>
+    <li>
+      <strong>Perfect lighthouse score.</strong> 100 across the board.
+    </li>
+    <li>
+      <strong>Content authoring for everyone.</strong> Author content using markdown
+      (<code>.md</code>) from your code editor or directly in GitHub.
+    </li>
+    <li>
+      <span>
+        <strong>Extended markdown</strong> with 
+        <a href="https://markdoc.dev">Markdoc</a>.
+      </span>
+      <span>
+        Type-safe custom components like YouTube embed, Twitter embed (or
+        anything you want really) in your markdown (<code>.md</code>) files.</span
+      >
+    </li>
+    <li>
+      Built-in <strong>RSS feed</strong> for your blog, excellent<strong>
+        SEO</strong
+      > and more.
+    </li>
+  </ul>
+</div>
