@@ -25,25 +25,28 @@ import FotterThreejs from "./FotterThreejs.astro"
 
 <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-    <FotterThreejs />
-    <!-- <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Joel Benitez</a>. -->
-  </span>
-  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-      <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Newsletter</a>
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 md:w-1/4 md:text-left mb-4 md:mb-0">
+      <FotterThreejs />
+    </span>
+    <!-- <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 md:w-1/4 md:text-right">© 2023 <a href="#" class="hover:underline">Joel Benitez</a>.   </span>-->
+
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 md:w-3/4 md:justify-end justify-around">
+      <li class="mb-2 md:mb-0">
+        <a href="#" class="hover:underline me-4 md:me-6">Newsletter</a>
+      </li>
+      <li class="mb-2 md:mb-0">
+        <a href="#" class="hover:underline me-4 md:me-6">Github</a>
+      </li>
+      <li class="mb-2 md:mb-0">
+        <a href="#" class="hover:underline me-4 md:me-6">Linkedin</a>
       </li>
       <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Github</a>
+        <a href="#" class="hover:underline">Behance</a>
       </li>
-      <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Linkedin</a>
-      </li>
-      <li>
-          <a href="#" class="hover:underline">Behance</a>
-      </li>
-  </ul>
+    </ul>
   </div>
 </footer>
+
 
 
 
@@ -52,18 +55,24 @@ import FotterThreejs from "./FotterThreejs.astro"
     grid-area: footer;
     text-align: center;
     display: flex;
+    flex-direction: column; /* Cambiado a columna para mejor respuesta en tamaños pequeños */
     align-items: center;
     justify-content: center;
+    padding: 1rem; /* Agregado un poco de relleno para mejorar la apariencia */
+    /* width: fit-content; */
+    height: fit-content;
+    justify-content: space-around;
   }
 
   .gradient-link {
     position: relative;
     box-decoration-break: clone;
     text-decoration: none;
+    margin-bottom: 0.5rem; /* Espaciado entre los enlaces para mejorar la legibilidad en tamaños pequeños */
   }
 
   .gradient-link:hover:after {
-    transform: translateZ(0) scale(1);
+    transform: translateZ(0) scaleX(1); /* Cambiado el valor a 1 para mostrar la línea de abajo completamente en el hover */
   }
 
   .gradient-link:after {
@@ -77,4 +86,23 @@ import FotterThreejs from "./FotterThreejs.astro"
     transform-origin: left center;
     transition: all 0.15s ease-in-out;
   }
+  footer span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+  @media screen and (min-width: 768px) {
+    footer {
+      flex-direction: row; /* Cambiado a fila para mejor respuesta en tamaños medianos y grandes */
+      justify-content: space-between; /* Alineación de los elementos a los extremos en tamaños medianos y grandes */
+
+    }
+
+
+    .gradient-link {
+      margin-bottom: 0; /* Eliminado el margen inferior en tamaños medianos y grandes */
+    }
+  }
 </style>
+
