@@ -7,36 +7,42 @@ date: 2024-01-01
 
 ogImagePath: /images/projects/CoverMaps.png
 ---
-**Descubre la Innovación Cartográfica: Tu Nuevo Compañero de Exploración Geoespacial**
 
-¡Hola, entusiastas de los mapas y exploradores digitales! Estoy emocionado de presentarte mi último proyecto: una aplicación web avanzada diseñada para llevar tu experiencia de exploración de mapas a nuevas alturas. En un mundo saturado de Google Maps y Apple Maps, he creado algo que va más allá de lo convencional, ofreciendo una forma fresca y emocionante de navegar por el mundo digital.
+![Portada](/images/projects/maps/mobilecover.png)
 
-[¡Explora el Proyecto Aquí!](https://maps-38wc.onrender.com/)
+## Discover Cartographic Innovation: Your New Geospatial Exploration Companion
 
-### ¿Qué Hace Tan Especial a Esta Aplicación?
+Hello, map enthusiasts and digital explorers! I am excited to introduce my latest project: an advanced web application designed to take your map exploration experience to new heights. In a world saturated with Google Maps and Apple Maps, I have created something beyond the conventional, offering a fresh and exciting way to navigate the digital world.
 
-1. **Navegación Intuitiva:**
-    - Experimenta la fluidez de la navegación gracias a la potencia de Leaflet. Mueve, explora y descubre de una manera totalmente intuitiva.
-2. **Variedad de Proveedores de Mapas:**
-    - ¿Cansado de las opciones limitadas? Con Leaflet, puedes cambiar entre diferentes proveedores de mapas, ampliando tus opciones más allá de lo ofrecido por Google Maps y Apple Maps.
-3. **Exploración en 3D con MapGL:**
-    - Sumérgete en la experiencia tridimensional con MapGL, llevando la exploración de mapas a una nueva dimensión. No es solo un mapa; es una aventura visual.
+[Explore the Project Here!](https://maps-38wc.onrender.com/)
 
-### Un Vistazo a los Detalles Técnicos
+### What Makes This Application Special?
 
-Para aquellos curiosos por detrás de la cortina, puedes echar un vistazo al código fuente y la estructura del proyecto en mi [repositorio de GitHub](https://github.com/j03rul4nd/Maps). Descubre cómo se ha dado vida a esta innovadora experiencia de exploración de mapas.
+1. **Intuitive Navigation:**
+    - Experience the smoothness of navigation thanks to the power of Leaflet. Move, explore, and discover in a completely intuitive way.
+     ![Map web responsive](/images/projects/maps/moreimages.png)
+2. **Variety of Map Providers:**
+    - Tired of limited options? With Leaflet, you can switch between different map providers, expanding your choices beyond what Google Maps and Apple Maps offer.
+    ![More Map Providers](/images/projects/maps/providersmore.png)
 
-### ¿Por Qué Deberías Estar Emocionado?
+3. **3D Exploration with MapGL:**
+    - Immerse yourself in the three-dimensional experience with MapGL, taking map exploration to a new dimension. It's not just a map; it's a visual adventure.
+    ![Map webgl](/images/projects/maps/handmobile.png)
+### A Glimpse into Technical Details
 
-1. **Libertad de Elección:**
-    - Rompe con la norma y elige tu proveedor de mapas favorito. Esta aplicación te da la libertad de personalizar tu experiencia de navegación de acuerdo a tus preferencias.
-2. **Visualmente Impactante:**
-    - La exploración en 3D añade una dimensión visualmente impresionante a la navegación de mapas. No solo es funcionalidad; es estética.
-3. **Exploración Personalizada:**
-    - Toma el control total de tu experiencia de navegación. Esta aplicación te permite explorar el mapa a tu manera.
+For those curious behind the scenes, you can take a look at the source code and project structure on my [ GitHub repository](https://github.com/j03rul4nd/Maps). Discover how this innovative map exploration experience came to life.
 
-## ¿Qué Viene Después?
+### Why Should You Be Excited?
 
-Este proyecto es solo el comienzo. Estoy trabajando en funciones adicionales para que la exploración de mapas sea aún más emocionante. Sigue atento para descubrir las próximas actualizaciones y mejoras.
+1. **Freedom of Choice:**
+    - Break the norm and choose your favorite map provider. This application gives you the freedom to customize your navigation experience according to your preferences.
+2. **Visually Stunning:**
+    - 3D exploration adds a visually stunning dimension to map navigation. It's not just functionality; it's aesthetics.
+3. **Personalized Exploration:**
+    - Take full control of your navigation experience. This application allows you to explore the map your way.
 
-¿Preparado para una nueva era de exploración de mapas? Adéntrate en el futuro de la navegación con mi [Web App](https://maps-38wc.onrender.com/). ¡Esto no es solo un proyecto; es una invitación a explorar el mundo digital de manera única! 🌍✨
+## What Comes Next?
+
+This project is just the beginning. I am working on additional features to make map exploration even more exciting. Stay tuned to discover upcoming updates and improvements.
+
+Ready for a new era of map exploration? Dive into the future of navigation with my [Web App](https://maps-38wc.onrender.com/). This is not just a project; it's an invitation to explore the digital world uniquely! 🌍✨
