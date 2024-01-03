@@ -3,8 +3,8 @@
 
 export const SITE_TITLE = "Joel Benitez";
 export const SITE_DESCRIPTION =
-  "Welcome to my blog! I write about modern web development.";
-export const TWITTER_HANDLE = "@yourtwitterhandle";
+  "Welcome to my software engineering realm, where innovation meets code. Delve into my portfolio to witness the diverse range of projects that highlight my expertise in crafting high-performance and scalable software solutions.";
+export const TWITTER_HANDLE = "@jowwiiiiii";
 export const MY_NAME = "Joel Benitez";
 
 // setup in astro.config.mjs

@@ -1,50 +1,41 @@
-# Blogster
+# **Joel Benitez Portfolio**
 
-Theme: **newspaper**
+Welcome to the repository for my personal portfolio website! This README provides an overview of the projects and experiences highlighted on my website.
 
-Blogster is a collection of beautiful, accessible and performant blog templates built with [Astro](https://astro.build) and [Markdoc](https://markdoc.dev).
+## **About Me**
 
-Check out the demo here - [Blogster newspaper template](https://blogster-newspaper.netlify.app).
+- **Name:** Joel Benitez
+- **GitHub:** [j03rul4nd](https://github.com/j03rul4nd)
+- **LinkedIn:** [Joel Benitez on LinkedIn](https://www.linkedin.com/in/joel-benitez-iiot-industry/)
 
-## Newspaper Template
+I am an experienced Software Developer with a specialization in web development, IIoT, GIS, and WebGL. Currently, I am working as an R&D Developer at becolve digital.
 
-A beautiful, performant and accessible theme built with [Tailwind](https://tailwindcss.com).
+## **Portfolio Highlights**
 
-- **Fast**. Fast by default. Astro websites are engineered to be fast and load before you could blink, even when not cached.
-- **Dark mode**. All themes have light/dark mode built-in.
-- **Mobile first**. Responsive and loads fast in all devices.
-- **Accessible**. A well thought out semantic and accessible content.
-- **Perfect lighthouse score.** 100 across the board.
-- **Easy content authoring**. Author content using markdown (`.md`) from your code editor or directly in GitHub.
-- **Extended markdown with [Markdoc](https://markdoc.dev).** Type-safe custom components like YouTube embed, Twitter embed (or anything you want really) in your markdown (`.md`) files.
-- **RSS feed**. Your blog has an RSS feed setup that can be accessed at `/rss.xml`.
-- **SEO**. All pages are setup with all the SEO you might need.
+### **[Multi-Provider 3D Maps Explorer](https://joelbenitez.onrender.com/blog/MapsProject)**
 
-## How do I add content?
+Switch seamlessly between Google Maps, Apple Maps, and MapLibre. Enjoy 3D views, real-time weather, and personalized favorites.
 
-All the content is written in markdown (.md) and grouped as `blog` or `projects` in the `content` directory. All the default markdown syntax will work. You also have a few example custom markdown elements like _YouTube embed_, _Twitter embed_, etc. You can create your own custom components too in two easy steps.
+### **Live Chat and Collaborative Exploration**
 
-1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
-2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
+Thanks to Three.js and WebSockets, users can communicate via live chat as they explore and move around a shared 3D map. Watch other users' movements in real-time for a unique collaborative experience.
 
-## How do I make it my blog?
+### **[vanillaUI](https://joelbenitez.onrender.com/blog/VanillaUI)**
 
-Easy.
+Dependency-free, Full JS Vanilla Components for Effortless Web Magic.
 
-- All content is static and everything is straight forward. Change whatever you need to change.
-- Delete or update the content in `content/{content-group}`. `content-group` could be `blog`, `projects` or `anything`.
-- (Optional) If you need more content types like _Notes_, just create a new dir in `content` and add a new frontmatter validator like [src/lib/markdoc/blog/frontmatter](src/lib/markdoc/blog/frontmatter).
+### **[Psychedelic Sphere](https://joelbenitez.onrender.com/blog/SphereThree)**
 
-## How do I deploy?
+Moving particles with psychedelic effects using Three.js.
 
-`yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
+## **Imagine, Design, and Create**
 
-## Credit
+Dive into my creative realm through compelling case studies that transcend mere design. From captivating flower-themed websites to seamless ski resort pass purchasing experiences, each project tells a visual story that seamlessly blends innovation with style.
 
-Thanks to other templates that inspired this theme.
+Immerse yourself in my UI/UX demos and discover how creativity meets functionality to craft truly unique digital experiences.
 
-- [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
+## **Visit My Website**
 
-## License
+Explore my portfolio in action by visiting my website: [Joel Benitez Portfolio](https://joelbenitez.onrender.com/)
 
-MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/joel-benitez-iiot-industry/) or check out the code on [GitHub](https://github.com/j03rul4nd). If you have any questions or would like to collaborate, don't hesitate to reach out. Thank you for visiting!
