@@ -292,6 +292,9 @@ import CubeSection from "./CubeSection.astro"
 </div>
 
 <style>
+  .uixcaseslist .overlay a.btnReadMoreInfoUIX{
+    background-color: #0098ff24;
+  }
   .uixcaseslist .readmoreInfo span {
     /* display: none; */
     opacity: 0;
@@ -345,7 +348,105 @@ import CubeSection from "./CubeSection.astro"
 </style>
 
 
-<div>
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+<h1 class="flex items-center text-4xl font-extrabold dark:text-white">Newsletter<span class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2"><i class="fa-solid fa-newspaper"></i></span></h1>
+
+<div class="ListCardProyects listNewslettersection">
+  <style>
+    .fa-newspaper::before{
+      content: "\f1ea";
+    }
+  </style>
+  <!-- card newsletter -->
+  <div  
+    class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 Carditem">
+      <div
+        class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/images/blog/js-best-practiques/Portada.png?fit=crop&w=687&q=80')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+        <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+      </div>
+      <div class="relative p-6 px-6 py-14 md:px-12">
+        <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+          Mejora el Rendimiento de tu Aplicación Web
+        </h2>
+        <h5 class="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
+          Joel Benitez
+        </h5>
+        <img alt="Joel Benitez"
+        src="/images/aboutMe/profile.jpg?fit=crop&amp;w=1480&amp;q=80"
+        
+          class="relative inline-block h-[74px] w-[74px] !rounded-full border-2 border-white object-cover object-center" />
+      </div>
+  </div>  
+  <!-- card tokens -->
+  <div
+    class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 Carditem">
+      <div
+        class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/images/blog/tokens/PortadaDesignTokens.png?fit=crop&w=687&q=80')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+        <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+      </div>
+      <div class="relative p-6 px-6 py-14 md:px-12">
+        <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+         Tokens de Diseño: La Clave está en el Nombre
+        </h2>
+        <h5 class="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
+          Joel Benitez
+        </h5>
+        <img alt="Joel Benitez"
+        src="/images/aboutMe/profile.jpg?fit=crop&amp;w=1480&amp;q=80"
+        
+          class="relative inline-block h-[74px] w-[74px] !rounded-full border-2 border-white object-cover object-center" />
+      </div>
+  </div> 
+  <!-- design system -->
+  <div
+    class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 Carditem">
+      <div 
+        class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/images/blog/designsystem/coverdesignsystemportfolio.png?fit=crop&w=687&q=80')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+        <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+      </div>
+      <div class="relative p-6 px-6 py-14 md:px-12">
+        <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+          ¿Necesito un sistema de diseño en 2024?
+        </h2>
+        <h5 class="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
+          Joel Benitez
+        </h5>
+        <img alt="Joel Benitez"
+        src="/images/aboutMe/profile.jpg?fit=crop&amp;w=1480&amp;q=80"
+        
+          class="relative inline-block h-[74px] w-[74px] !rounded-full border-2 border-white object-cover object-center" />
+      </div>
+  </div> 
+  <!--  trend website 2024 -->
+  <div
+  class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700 Carditem">
+    <div  
+      class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/images/blog/trendswebsite24/mobileportada2024webtrends.png?fit=crop&w=687&q=80')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+      <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+    </div>
+    <div class="relative p-6 px-6 py-14 md:px-12">
+      <h2 class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+        Prepara tu Sitio para el Futuro
+      </h2>
+      <h5 class="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
+        Joel Benitez
+      </h5>
+      <img alt="Joel Benitez"
+      src="/images/aboutMe/profile.jpg?fit=crop&amp;w=1480&amp;q=80"
+      
+        class="relative inline-block h-[74px] w-[74px] !rounded-full border-2 border-white object-cover object-center" />
+    </div>
+</div> 
+
+  <!-- ... -->
+</div>
+
+<style>
+  /* .listNewslettersection{
+
+  } */
+</style>
+<!-- <div>
   <p>
     Here are a few reasons why you will love this template:
   </p>
@@ -393,4 +494,4 @@ import CubeSection from "./CubeSection.astro"
       > and more.
     </li>
   </ul>
-</div>
+</div> -->
