@@ -7,40 +7,78 @@ date: 2024-01-01
 
 ogImagePath: /images/blog/VaillaUI/CoverVanillaUI.png
 ---
-**Libertad y Simplicidad en Componentes sin Dependencias**
+![Cover VanillaUI](/images/blog/VaillaUI/covervanillaUIBlog.png)
 
-¡Hola a todos los apasionados de la creación web! Estoy emocionado de compartir mi último proyecto, VanillaUI, una biblioteca de componentes diseñada para aquellos que buscan la simplicidad y la libertad total en el desarrollo web. Al igual que una versión sin ataduras de Kendo, VanillaUI es completamente independiente de dependencias, aprovechando el poder del CSS y JavaScript vanilla para crear componentes elegantes y funcionales.
 
-**¡Explora VanillaUI Aquí!**
+## VanillaUI: Freedom and Simplicity in Dependency-Free Components
 
-## Lo Esencial
+Greetings to all web development enthusiasts! I am thrilled to introduce my latest project, VanillaUI: a component library designed for those seeking simplicity and complete freedom in web development. Like a dependency-free version of Kendo, VanillaUI is entirely independent of dependencies, harnessing the power of vanilla CSS and JavaScript to create elegant and functional components.
 
-Hasta el momento, he lanzado el componente de botón, pero eso es solo el principio. En el futuro, planeo expandir VanillaUI con emocionantes adiciones, como tarjetas y otros componentes que harán que tu desarrollo web sea aún más sencillo y eficiente.
+[Explore the Project Here!](https://j03rul4nd.github.io/VanillaUI/)
 
-## Características Destacadas
+## The Essentials
 
-1. **Libre de Dependencias:**
-    - Olvídate de los problemas de compatibilidad. VanillaUI se enorgullece de ser totalmente independiente de dependencias, lo que significa que puedes integrarla fácilmente en tus proyectos sin preocuparte por conflictos.
-2. **Funciona con JS Vanilla:**
-    - La joya de la corona de VanillaUI es su compatibilidad total con JavaScript vanilla. Esto no solo garantiza un rendimiento óptimo, sino que también simplifica tu proceso de desarrollo al prescindir de bibliotecas externas.
-3. **Comienza con el Botón:**
-    - Por ahora, el componente de botón es solo el primer paso. Imagina el potencial cuando introduzca tarjetas y otros componentes en futuras actualizaciones.
+So far, I've released the button component, but this is just the beginning. In the future, I plan to expand VanillaUI with exciting additions such as cards and other components that will make your web development even simpler and more efficient.
 
-## ¿Cómo Funciona?
+## Key Features
 
-Para ver la magia de VanillaUI en acción y explorar el código detrás de cada componente, visita mi repositorio en GitHub. Allí encontrarás la estructura, los estilos y las funciones que hacen que VanillaUI sea único.
+1. **Dependency-Free:**
+    - Forget about compatibility issues. VanillaUI prides itself on being entirely independent of dependencies, meaning you can easily integrate it into your projects without worrying about conflicts.
+    ```bash
+        https://j03rul4nd.github.io/VanillaUI/dist/vanillaui.js
+        https://j03rul4nd.github.io/VanillaUI/dist/vanillaui.css
+    ```
+2. **Works with Vanilla JS:**
+    - The crown jewel of VanillaUI is its full compatibility with vanilla JavaScript. This ensures not only optimal performance but also simplifies your development process by eliminating the need for external libraries.
+3. **Starts with the Button:**
+    - For now, the button component is just the first step. Imagine the potential when I introduce cards and other components in future updates.
+    ![variants button VanillaUI](/images/blog/VaillaUI/btnvariants.png)
 
-## ¿Qué Hace Especial a VanillaUI?
+## How Does it Work?
 
-1. **Flexibilidad Total:**
-    - Esta biblioteca está diseñada para adaptarse a tus necesidades sin imponer restricciones. Cada componente es altamente personalizable para que puedas darle tu toque único.
-2. **Rendimiento Eficiente:**
-    - Al utilizar JS vanilla, VanillaUI garantiza un rendimiento eficiente sin la carga adicional de bibliotecas externas. Tus usuarios disfrutarán de una experiencia rápida y fluida.
-3. **Potencial en Crecimiento:**
-    - Estoy comprometido a expandir VanillaUI con nuevos componentes y características emocionantes. ¿Qué te gustaría ver a continuación? ¡Estoy abierto a sugerencias!
+To witness the magic of VanillaUI in action and explore the code behind each component, visit my [ GitHub repository](https://github.com/j03rul4nd/VanillaUI). There, you'll find the structure, styles, and functions that make VanillaUI unique.
 
-## ¿Qué Viene Próximamente?
+![VanillaUI Components](/images/blog/VaillaUI/btnVanillaUI.png)
 
-Estoy emocionado por el futuro de VanillaUI. Pronto, estaré lanzando nuevos componentes y mejoras para que tu experiencia de desarrollo sea aún más grandiosa.
+```jsx
+//Colors Default
+VanillaUI(document.getElementById("btn-Colors-d")).createButton({ 
+    color:"Default"
+});
+//Colors Primary
+VanillaUI(document.getElementById("btn-Colors-p")).createButton({ 
+    color:"Primary"
+});
+//Colors Secondary
+VanillaUI(document.getElementById("btn-Colors-s")).createButton({ 
+    color:"Secondary"
+});
+//Colors Success
+VanillaUI(document.getElementById("btn-Colors-ss")).createButton({ 
+    color:"Success"
+});
+//Colors Warning
+VanillaUI(document.getElementById("btn-Colors-w")).createButton({ 
+    color:"Warning"
+});
+//Colors Error
+VanillaUI(document.getElementById("btn-Colors-e")).createButton({ 
+    color:"Error"
+});
 
-¡Da el primer paso hacia un desarrollo web sin complicaciones! Explora VanillaUI y únete a la revolución de la simplicidad en el desarrollo web. 🚀✨
+```
+
+## What Makes VanillaUI Special?
+
+1. **Total Flexibility:**
+    - This library is designed to adapt to your needs without imposing restrictions. Each component is highly customizable so you can add your unique touch.
+2. **Efficient Performance:**
+    - By using vanilla JS, VanillaUI ensures efficient performance without the additional load of external libraries. Your users will enjoy a fast and smooth experience.
+3. **Growing Potential:**
+    - I am committed to expanding VanillaUI with new components and exciting features. What would you like to see next? I am open to suggestions!
+
+## What's Coming Next?
+
+I am excited about the future of VanillaUI. Soon, I'll be releasing new components and enhancements to make your development experience even more fantastic.
+
+Take the first step towards hassle-free web development! Explore VanillaUI and join the simplicity revolution in web development. 🚀✨

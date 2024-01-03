@@ -1,0 +1,253 @@
+---
+---
+<style >
+    .Carditem:hover img, .Carditem:hover #CubeSection {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+  }
+  .Carditem img, .Carditem:hover #CubeSection {
+      transition: transform 0.3s ease-in-out;
+  }
+    .Carditem{
+          flex: 1 1 calc(50% - 20px); 
+          overflow: hidden;
+      }
+  
+  .shadow:hover {
+      box-shadow: rgb(240 242 248 / 49%) 0px 0px 0px 2px;
+      transition: all 0.2s ease-out 0s;
+  }
+  .shadow{
+    transition: all 0.3s ease-out 0s;
+    will-change: box-shadow, transform;
+  }
+  
+    a.readmoreInfo:hover {
+      cursor: pointer;
+      transition: all 0.2s ease-out 0s;
+      box-shadow: rgb(240, 242, 248) 0px 0px 0px 5px;
+    }
+  
+    a.readmoreInfo {
+        background-image:none;
+        width: fit-content;
+        height: 36px;
+        padding: 0px 12px;
+        top: 20px;
+        right: 20px;
+        border-radius: 18px;
+        box-shadow: rgb(240, 242, 248) 0px 0px 0px 2px;
+        border: none;
+        background: transparent;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: all 0.3s ease-out 0s;
+        will-change: box-shadow, transform;
+    }
+    .ListCardProyects{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    @media (max-width: 480px) {
+      .ListCardProyects{
+        flex-direction: column;
+      }
+      
+    }
+  </style>
+  
+  <p class="text-center whitespace-nowrap overflow-auto mt-4 mb-4">
+    
+    <h2 style="line-height: 3rem;" class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Imagine</span>,<span class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">Design</span><br/><small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">and</small><span class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2">Create</span></h2>
+  
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        Dive into my creative realm through compelling case studies that transcend mere design. 
+    </p>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+      From captivating flower-themed websites to seamless ski resort pass purchasing experiences, each project tells a visual story that seamlessly blends innovation with style.
+    </p>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+      Immerse yourself in my UI/UX demos and discover how creativity meets functionality to craft truly unique digital experiences.
+    </p>
+  
+  </p>
+  
+  <div class="ListCardProyects uixcaseslist">
+    <!-- card zentinel-->
+    <div onclick="window.location.href='/blog/ZentCore'" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+      <a href="/blog/ZentCore">
+          <img class="rounded-t-lg image-container" src="/images/blog/ZentinelMDS/Coverportada_dashboard.png" alt="Case study UIX ZentCore Joel Benitez" />
+          <div class="overlay">
+            <a href="/blog/ZentCore" class="readmoreInfo dark:darkmodeReadMore btnReadMoreInfoUIX bg-white dark:bg-gray-800">
+                <span>
+                  Read more
+                </span> 
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </a>
+      <!-- <div class="p-5">
+         
+      </div> -->
+    </div>
+    <!-- card plants-->
+    <div onclick="window.location.href='https://www.behance.net/gallery/159863901/UIX-Interface-MyPlants'"  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+      <a href="https://www.behance.net/gallery/159863901/UIX-Interface-MyPlants">
+          <img class="rounded-t-lg image-container" src="/images/blog/MyPlants/CoverPlants.png" alt="" />
+          <div class="overlay">
+            <a href="https://www.behance.net/gallery/159863901/UIX-Interface-MyPlants" class="readmoreInfo dark:darkmodeReadMore btnReadMoreInfoUIX bg-white dark:bg-gray-800">
+                <span>
+                  Read more
+                </span> 
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </a>
+      <!-- <div class="p-5">
+         
+      </div> -->
+    </div>
+    <!-- card darkmode-->
+    <div onclick="window.location.href='https://www.behance.net/gallery/158639883/Dashboard-Dark-Theme'"  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+      <a href="https://www.behance.net/gallery/158639883/Dashboard-Dark-Theme">
+          <img class="rounded-t-lg image-container" src="/images/blog/darktheme/coverdarktheme.png" alt="" />
+          <div class="overlay">
+            <a href="https://www.behance.net/gallery/158639883/Dashboard-Dark-Theme" class="readmoreInfo dark:darkmodeReadMore btnReadMoreInfoUIX bg-white dark:bg-gray-800">
+                <span>
+                  Read more
+                </span> 
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </a>
+      <!-- <div class="p-5">
+         
+      </div> -->
+    </div>
+    <!-- card fintech-->
+    <div onclick="window.location.href='https://www.behance.net/gallery/163329053/Fintech-Dashboard-Industry-Insights'" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+      <a href="https://www.behance.net/gallery/163329053/Fintech-Dashboard-Industry-Insights">
+          <img class="rounded-t-lg image-container" src="/images/blog/Fintech/coverfintech.png" alt="" />
+          <div class="overlay">
+            <a href="https://www.behance.net/gallery/163329053/Fintech-Dashboard-Industry-Insights" class="readmoreInfo dark:darkmodeReadMore btnReadMoreInfoUIX bg-white dark:bg-gray-800">
+                <span>
+                  Read more
+                </span> 
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </a>
+      <!-- <div class="p-5">
+         
+      </div> -->
+    </div>
+    <!-- card dashboard-->
+    <div onclick="window.location.href='https://www.behance.net/gallery/157333231/Dashboard'" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+      <a href="https://www.behance.net/gallery/157333231/Dashboard">
+          <img class="rounded-t-lg image-container" src="/images/blog/dashborad/portada_dashboard.png" alt="" />
+          <div class="overlay">
+            <a href="https://www.behance.net/gallery/157333231/Dashboard" class="readmoreInfo dark:darkmodeReadMore btnReadMoreInfoUIX bg-white dark:bg-gray-800">
+                <span>
+                  Read more
+                </span> 
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </a>
+      <!-- <div class="p-5">
+         
+      </div> -->
+    </div>
+    <!-- card oee-->
+    <div onclick="window.location.href='https://www.behance.net/gallery/157314295/OEE'" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative Carditem">
+      <a href="https://www.behance.net/gallery/157314295/OEE">
+          <img class="rounded-t-lg image-container" src="/images/blog/oee/oee-portada.png" alt="" />
+          <div class="overlay">
+            <a href="https://www.behance.net/gallery/157314295/OEE" class="readmoreInfo dark:darkmodeReadMore btnReadMoreInfoUIX bg-white dark:bg-gray-800">
+                <span>
+                  Read more
+                </span> 
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </a>
+      <!-- <div class="p-5">
+         
+      </div> -->
+    </div>
+  </div>
+  
+  <style>
+    .uixcaseslist .overlay a.btnReadMoreInfoUIX{
+      background-color: #000000ab;
+    }
+    .uixcaseslist .readmoreInfo span {
+      /* display: none; */
+      opacity: 0;
+      width: 0px;
+      white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el ancho del elemento */
+    text-overflow: ellipsis;
+      color: transparent;
+      transition:  opacity 1.5s ease, width 1.5s ease; /* Agrega una transición suave */
+    }
+  
+    .uixcaseslist .readmoreInfo:hover span {
+      opacity: 1;
+      width: 100px;
+      transition: opacity 1.5s ease, width 1.5s ease;
+      /* display: block; */
+      color: white;
+    }
+  
+    .uixcaseslist .Carditem .readmoreInfo:hover svg{
+      margin-left: 0.5rem;
+      color: white;
+    }
+    .Carditem .readmoreInfo svg{
+      margin-left: 0.5rem;
+    }
+    .uixcaseslist .Carditem .readmoreInfo svg {
+      margin-left: 0px;
+    }
+  
+  
+    .btnReadMoreInfoUIX{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .image-container {
+      position: relative;
+      display: block;
+   }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+     /* background-color: rgba(0, 0, 0, 0.5);  Puedes ajustar el color y la opacidad según tus necesidades */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 10px; /* Puedes ajustar el espaciado según tus necesidades */
+  }
+  </style>
