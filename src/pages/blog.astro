@@ -31,7 +31,7 @@ const sortedPosts = posts
 <PageLayout>
   <PageMeta title={`Blog | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    <ul class="flex flex-wrap gap-4 content-start">
+    <ul class="flex flex-wrap gap-4 content-start contentlistBlog">
       {
         sortedPosts.map((post) => {
           const formattedDate = new Date(
@@ -74,7 +74,7 @@ const sortedPosts = posts
 
             </li>*/
 
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="cardItemBlog max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                   <img class="rounded-t-lg" src= {post.frontmatter.ogImagePath} alt="" />
               </a>
@@ -103,3 +103,17 @@ const sortedPosts = posts
     </ul>
   </section>
 </PageLayout>
+<style>
+  .cardItemBlog{
+    flex: 1 1 calc(50% - 20px);
+  }
+  .contentlistBlog{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+</style>
