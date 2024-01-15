@@ -75,8 +75,8 @@ const sortedPosts = posts
             </li>*/
 
             <div class="cardItemBlog max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img class="rounded-t-lg" src= {post.frontmatter.ogImagePath} alt="Cover Blog Portfolio" />
+              <a href={`/blog/${post.slug}`} >
+                  <img class="rounded-t-lg" src= {post.frontmatter.ogImagePath} />
               </a>
               <div class="p-5">
                   <a  href={`/blog/${post.slug}`} >
