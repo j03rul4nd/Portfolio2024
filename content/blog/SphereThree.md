@@ -8,7 +8,7 @@ date: 2024-01-01
 ogImagePath: /images/blog/Sphere/SphereVideo.mp4
         
 ---
-{% codepen url="https://codepen.io/Jowwii/pen/YzBbzRo" title="Testing Three Js " /%}
+{% codepen slug="YzBbzRo" url="https://codepen.io/Jowwii/pen/YzBbzRo" title="Testing Three Js " /%}
 
 In the fascinating realm of web development, crafting 3D interactive experiences has become increasingly accessible thanks to libraries like Three.js. In this article, we'll delve into an intriguing project utilizing Three.js to build a visually appealing component. We'll dissect each part of the code to understand how it works and the decisions behind each choice.
 

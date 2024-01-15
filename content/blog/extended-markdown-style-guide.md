@@ -24,7 +24,7 @@ You can embed tweets in your blog posts.
 
 You can embed codepens in your blog posts.
 
-{% codepen url="https://codepen.io/ruphaa/pen/eYJqjgq" title="Ecosystem - Pen in CSS by Ruphaa" /%}
+{% codepen slug="eYJqjgq" url="https://codepen.io/ruphaa/pen/eYJqjgq" title="Ecosystem - Pen in CSS by Ruphaa" /%}
 
 ## GitHub Gist
 

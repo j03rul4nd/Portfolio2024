@@ -2,16 +2,17 @@
 type Props = {
   url: string;
   title: string;
+  slug: string;
 };
 
-const { url, title } = Astro.props;
+const { slug, url, title } = Astro.props;
 ---
-
+<!-- YzBbzRo -->
 <p
   class="codepen"
   data-height="300"
-  data-default-tab="html,result"
-  data-slug-hash="YzBbzRo"
+  data-default-tab="js,result"
+  data-slug-hash=`${slug}`
   data-user="Jowwii"
   style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
 >
