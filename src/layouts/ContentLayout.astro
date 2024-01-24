@@ -54,8 +54,8 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
         <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
         <slot name="content" />
       </section>
+      <Footer />
     </main>
-    <Footer />
     <style>
       body {
         display: grid;

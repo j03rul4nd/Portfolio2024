@@ -1,0 +1,129 @@
+
+<section class="relative shadow-2xl" id="ContactToMe">
+    <div class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0" id="BackSectionContactToMe"></div>
+
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative" id="contentToMeSectionText">
+        
+        <!-- <a href="#" class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
+            <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">New</span> <span class="text-sm font-medium">Jumbotron component was launched! See what's new</span> 
+            <svg class="w-2.5 h-2.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+        </a> -->
+
+
+        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            Ignite Your Vision
+        </h2>
+        
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">
+            Seamless Innovation Unleashed - Your Journey to Remarkable Digital Experiences Begins Here
+        </p>
+        
+        <form class="w-full max-w-md mx-auto">   
+            <!-- <label for="default-email" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Email sign-up</label> -->
+            
+            <div data-tooltip-target="tooltip-email" class="relative sectionInputGrpuo block w-full p-4  border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                
+                <div class=" inset-y-0 rtl:inset-x-0 start-0 flex items-center  pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                    </svg>
+                </div>
+
+                <div  id="defaultEmail" class="text-sm sm:text-base text-gray-900"   >JoelBenitezdonari@gmail.com</div>
+
+                <button  id="copyBtn" class="text-white end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 text-sm sm:text-base focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Copy</button>
+           
+            </div>
+            <div id="tooltip-email" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                ✨​Contact to me✨​
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </form>
+
+
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', function() {
+    event.preventDefault()
+    // Seleccionar el texto del correo electrónico
+    var emailText = document.getElementById('defaultEmail');
+    var range = document.createRange();
+    range.selectNode(emailText);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    // Intentar copiar el texto al portapapeles
+    try {
+        document.execCommand('copy');
+        console.log('Correo electrónico copiado');
+    } catch (err) {
+        console.error('No se pudo copiar el correo electrónico', err);
+    }
+
+    // Limpiar la selección de texto
+    window.getSelection().removeAllRanges();
+
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
+});
+</script>
+<style>
+.sectionInputGrpuo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+@media (max-width: 480px){
+    .sectionInputGrpuo{
+        flex-direction: column;
+    }
+}
+
+.copy-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.copy-container .copy-text {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.copy-container .copy-button {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+    #ContactToMe{
+        margin-top: 1rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    #BackSectionContactToMe{
+        border-radius: 1rem;
+        /* box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / .25); */
+    }
+</style>
