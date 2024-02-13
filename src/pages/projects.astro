@@ -52,6 +52,32 @@ const sortedProjects = projects
                 </time>
               </div>
             </li>
+
+
+
+
+
+            
+              
+
+            <a href={project.frontmatter.url}
+                target="_blank"
+                class="block h-auto max-w-full" 
+                style="background-image: none">
+
+                  <img class="w-full h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" 
+                      src={project.frontmatter.ogImagePath}
+                      alt="image description">
+            </a>
+
+                
+
+
+
+
+            
+
+
           );
         })
       }
