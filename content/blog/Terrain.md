@@ -1,8 +1,8 @@
 ---
 external: false
 title: "Web Map Creation: Procedural Erosion, Shaders, and GIS Techniques"
-description: "Explore how I transform MP3 files into visual spheres that respond to frequencies, creating a unique real-time experience."
-date: 2024-01-15
+description: "Explore the 3D digital mapping revolution with shaders and GIS techniques. Visualize geospatial data uniquely. Discover innovation today!"
+date: 2024-03-14
 ogImagePath: /images/blog/terrain/terrain_mountain.gif
 
 ---
