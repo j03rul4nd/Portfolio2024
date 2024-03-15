@@ -8,44 +8,41 @@ ogImagePath: /images/blog/terrain/terrain_mountain.gif
 ---
 {% codepen slug="mdgrbZY" url="https://codepen.io/Jowwii/pen/mdgrbZY" title="mountain glsl threejs" /%}
 
-## Introducción
+## Introduction
 
-En el mundo de la tecnología y el desarrollo web, la creación de mapas digitales ha evolucionado significativamente, permitiendo la visualización y análisis de datos geoespaciales de manera más eficiente y accesible. Uno de los avances más notables en este campo es el uso de técnicas de mapeo procedural para transformar imágenes en terrenos 3D en la web. Este artículo explorará cómo se logra este proceso, su utilidad en el sector GIS (Sistema de Información Geográfica), y cómo se aplica en el proyecto "Web Map Creation: Procedural Erosion, Shaders, and GIS Techniques".
+In the world of technology and web development, the creation of digital maps has evolved significantly, allowing for more efficient and accessible visualization and analysis of geospatial data. One of the most notable advances in this field is the use of procedural mapping techniques to transform 2D images into 3D terrains on the web. This article will explore how this process is achieved, its utility in the GIS (Geographic Information System) sector, and how it is applied in the project “Web Map Creation: Procedural Erosion, Shaders, and GIS Techniques”.
 
 {% codepen slug="vYMKoMW" url="https://codepen.io/Jowwii/pen/vYMKoMW" title="Web Map Creation: Procedural Erosion, Shaders, and GIS Techniques" /%}
 
-## Pasos para Convertir una Imagen en un Terreno 3D
+## Steps to Convert an Image into a 3D Terrain
 
-El proceso de convertir una imagen en un terreno 3D en la web se basa en técnicas de shaders y mapeo procedural. A continuación, se detallan los pasos clave utilizando el código proporcionado:
+The process of converting an image into a 3D terrain on the web is based on shader techniques and procedural mapping. The key steps using the provided code are detailed below:
 
-1. **Configuración de la Escena y la Cámara**: Se inicia creando una escena y una cámara en Three.js, una biblioteca de JavaScript para la creación de gráficos 3D en la web. La cámara se posiciona para capturar la vista deseada del terreno.
+1. **Setting up the Scene and Camera**:  It begins by creating a scene and a camera in Three.js, a JavaScript library for creating 3D graphics on the web. The camera is positioned to capture the desired view of the terrain.
 
-```glsl
+```jsx
 import * as THREE from "three";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-// Crear escena y cámara
+// Create scene and camera
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-// Posicionar cámara
+// Position camera
 camera.position.z = 5;
-
-// Añadir lienzo a la escena
+// Add canvas to the scene
 const renderer = new THREE.WebGLRenderer({
     canvas: document.getElementById("canvas"),
     preserveDrawingBuffer: true,
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
-
 const controls = new OrbitControls(camera, renderer.domElement);
 ```
 
-2. **Carga de la Textura**: Se carga una textura de una imagen (en este caso, una imagen de montañas de Noruega) utilizando `THREE.TextureLoader()`. Esta textura se utilizará para definir la elevación del terreno.
+2. **Texture Loading**: Load a texture from an image (in this case, an image of mountains from Norway) using `THREE.TextureLoader()`. This texture will be used to define the elevation of the terrain.
 
 ```jsx
-//texture
+// Texture
 const mountain = new THREE.TextureLoader().load(
   "./norway.png"
 )
@@ -53,7 +50,7 @@ const mountain = new THREE.TextureLoader().load(
 
 ![norway.png](/images/blog/terrain/norway.png)
 
-3. **Creación de Shaders**: La magia ocurre al implementar shaders, fragmentos de código altamente eficientes que se ejecutan en la GPU. El vertex shader modifica la posición del modelo basándose en la información de una textura que representa el relieve del terreno. 
+3. **Shader Creation**: The magic happens when implementing shaders, highly efficient code snippets that run on the GPU. The vertex shader modifies the position of the model based on information from a texture representing the terrain relief.
 
 ```glsl
 uniform sampler2D uMountain;
@@ -73,7 +70,7 @@ void main(){
 }
 ```
 
-Por otro lado, el fragment shader asigna colores en función de la elevación del terreno.
+On the other hand, the fragment shader assigns colors based on the terrain elevation.
 
 ```glsl
 varying float vElevation;
@@ -88,10 +85,10 @@ void main(){
 }
 ```
 
-4. **Aplicación del Shader a un Plano**: Se crea un plano y se le aplica el material shader creado anteriormente. Este plano representará el terreno 3D.
+4. **Applying Shader to a Plane**: Create a plane and apply the previously created shader material to it. This plane will represent the 3D terrain.
 
 ```jsx
-//crear shaders
+// Create shaders
 var vertexShader = `
 uniform sampler2D uMountain;
 varying float vElevation;
@@ -123,89 +120,77 @@ void main(){
 `;
 ```
 
-5. **Animación**: Se implementa una función de animación que actualiza el tiempo en el shader de fragmento, permitiendo que el terreno cambie con el tiempo.
+5. **Animation**: Implement an animation function that updates the time in the fragment shader, allowing the terrain to change over time.
 
 ```jsx
-// Animación
+// Animation
 function animate() {
     requestAnimationFrame(animate);
-
     planeMaterial.uniforms.uTime.value += 0.02;
-
     renderer.render(scene, camera);
 }
-
 animate();
 ```
 
-## Resultado final
+## Final Result
+
 {% codepen slug="vYMKoMW" url="https://codepen.io/Jowwii/pen/vYMKoMW" title="Web Map Creation: Procedural Erosion, Shaders, and GIS Techniques" /%}
 
 
-## Utilidad en el Sector GIS
+## Utility in the GIS Sector
 
-El mapeo procedural es especialmente útil en el sector GIS por varias razones:
+Procedural mapping is especially useful in the GIS sector for several reasons:
 
-- **Visualización de Datos Geoespaciales**: Permite la visualización de datos geoespaciales de manera más interactiva y dinámica, facilitando la comprensión de patrones y tendencias.
-- **Análisis Espacial**: Facilita el análisis espacial, permitiendo la identificación de áreas de interés y la realización de predicciones basadas en datos geoespaciales.
-- **Desarrollo de Aplicaciones Web**: Facilita el desarrollo de aplicaciones web de mapeo y análisis geoespacial, aprovechando la accesibilidad y la interactividad que ofrece la web.
+- **Visualization of Geospatial Data**: It allows for more interactive and dynamic visualization of geospatial data, facilitating the understanding of patterns and trends.
+- **Spatial Analysis**: It facilitates spatial analysis, allowing for the identification of areas of interest and the making of predictions based on geospatial data.
+- **Development of Web Applications**: It facilitates the development of web mapping and geospatial analysis applications, leveraging the accessibility and interactivity offered by the web.
 
-El mapeo procedural es una herramienta poderosa para el sector GIS. Permite la visualización de datos geoespaciales de una manera más interactiva y dinámica, lo que facilita la comprensión de patrones y tendencias. Por ejemplo, se puede utilizar para crear mapas de riesgo de inundaciones o para visualizar la evolución de la deforestación a lo largo del tiempo.
+Procedural mapping is a powerful tool for the GIS sector. It enables the visualization of geospatial data in a more interactive and dynamic way, facilitating the understanding of patterns and trends. For example, it can be used to create flood risk maps or to visualize the evolution of deforestation over time.
 
-## Conclusión
+## Conclusion
 
-El mapeo procedural, utilizando shaders y técnicas GIS, ofrece una forma poderosa y flexible de transformar imágenes en terrenos 3D en la web. Este enfoque no solo mejora la visualización de datos geoespaciales, sino que también abre nuevas posibilidades para el análisis y la visualización en el sector GIS. A medida que la tecnología avanza, es probable que veamos aún más aplicaciones innovadoras de estas técnicas, impulsando el desarrollo de soluciones geoespaciales más efectivas y accesibles.
+Procedural mapping, using shaders and GIS techniques, offers a powerful and flexible way to transform images into 3D terrains on the web. This approach not only enhances the visualization of geospatial data but also opens up new possibilities for analysis and visualization in the GIS sector. As technology advances, we are likely to see even more innovative applications of these techniques, driving the development of more effective and accessible geospatial solutions.
 
-Código completo:
+Complete Code:
 
 ```jsx
 import * as THREE from "three";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-// Crear escena y cámara
+// Create scene and camera
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-// Posicionar cámara
+// Position camera
 camera.position.z = 5;
-
-// Añadir lienzo a la escena
+// Add canvas to the scene
 const renderer = new THREE.WebGLRenderer({
     canvas: document.getElementById("canvas"),
     preserveDrawingBuffer: true,
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
-
 const controls = new OrbitControls(camera, renderer.domElement);
-
-//texture
+// Texture
 const mountain = new THREE.TextureLoader().load(
   "./norway.png"
 )
-
-//crear shaders
+// Create shaders
 var vertexShader = `
 uniform sampler2D uMountain;
 varying float vElevation;
-
 void main(){
   vec4 modelPosition = modelMatrix * vec4(position,1);
-
   vec4 displacement = texture2D(uMountain, uv);
   modelPosition.y += displacement.r * 1.0;
-
-  gl_Position = projectionMatrix * 
+  gl_Position = projectionMatrix *
                     viewMatrix *
                     modelPosition;
-        
   vElevation = modelPosition.y;
 }
 `;
 var fragmentShader = `
 varying float vElevation;
 uniform float uTime;
-
 void main(){
     float colorMix = sin(vElevation * 2.0 + uTime);
     vec4 colorA = vec4(1.0, 0.0, 1.0, 1.0);
@@ -214,13 +199,11 @@ void main(){
     gl_FragColor = colorC;
 }
 `;
-
 const uniformData =  {
   uMountain: { value: mountain },
   uTime: { value: 0.0 },
 };
-
-// Crear un plano para aplicar el shader
+// Create a plane to apply the shader
 const planeMaterial = new THREE.ShaderMaterial({
   wireframe: false,
   side: THREE.DoubleSide,
@@ -228,28 +211,21 @@ const planeMaterial = new THREE.ShaderMaterial({
   vertexShader: vertexShader,
   fragmentShader: fragmentShader,
 });
-
 const planeGeometry = new THREE.PlaneGeometry(
   5,
   5,
   250,
   250
 );
-
 const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 planeMesh.rotation.x = Math.PI * -0.5
 planeGeometry.computeVertexNormals();
-
 scene.add(planeMesh);
-
-// Animación
+// Animation
 function animate() {
     requestAnimationFrame(animate);
-
     //planeMaterial.uniforms.uTime.value += 0.02;
-
     renderer.render(scene, camera);
 }
-
 animate();
 ```
