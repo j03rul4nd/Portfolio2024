@@ -10,6 +10,7 @@ import { config } from "./markdoc.config";
 const contentDirectory = path.normalize("./content");
 
 async function parseAndTransform({ content }: { content: string }) {
+
   const ast = Markdoc.parse(content);
 
   const errors = Markdoc.validate(ast, config);
@@ -17,6 +18,7 @@ async function parseAndTransform({ content }: { content: string }) {
     console.error(errors);
     throw new Error("Markdoc validation error");
   }
+  
   const transformedContent = Markdoc.transform(ast, config);
 
   return transformedContent;

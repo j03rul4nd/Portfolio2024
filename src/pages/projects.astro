@@ -33,25 +33,26 @@ const sortedProjects = projects
             day: "numeric",
           });
           return (
-            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
-              <div class="title">
-                <a
-                  href={project.frontmatter.url}
-                  target="_blank"
-                  class="unset hover:text-text-link"
-                >
-                  <span>{project.frontmatter.title}</span>
-                  <span>
-                    <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
-                  </span>
-                </a>
-              </div>
-              <div class="text-text-muted text-sm italic pt-1">
-                <time datetime={project.frontmatter.date.toISOString()}>
-                  {formattedDate}
-                </time>
-              </div>
-            </li>
+            // <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
+            //   <div class="title">
+            //     <a
+            //       href={project.frontmatter.url}
+            //       target="_blank"
+            //       class="unset hover:text-text-link"
+            //     >
+            //       <span>{project.frontmatter.title}</span>
+            //       <span>
+            //         <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
+            //       </span>
+            //     </a>
+            //   </div>
+            //   <div class="text-text-muted text-sm italic pt-1">
+            //     <time datetime={project.frontmatter.date.toISOString()}>
+            //       {formattedDate}
+            //     </time>
+            //   </div>
+
+            // </li>
 
 
 
@@ -62,7 +63,7 @@ const sortedProjects = projects
 
             <a href={project.frontmatter.url}
                 target="_blank"
-                class="block h-auto max-w-full" 
+                class="flex justify-center	 h-auto max-w-full" 
                 style="background-image: none">
 
                   <img class="w-full h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" 
@@ -70,7 +71,99 @@ const sortedProjects = projects
                       alt="image description">
             </a>
 
+            <div class="sectionDataInfo">
+              
+              <div class="sectionContentComponentCard" data-is-open="false">
+                  <div class="titleContenteComponentCard">
+                      <div class="TextContentCardTittle"> { project.frontmatter.title } </div>
+                      <div class="btnMoreContent">
+                          <div class="iconMoreContentAnimation">
+                              <div class="icon-top"></div>
+                              <div class="icon-bottom"></div>
+
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="captionCardContent">
+                      { project.frontmatter.description }
+                      <div class="text-text-muted text-sm italic pt-1">
+                        <time datetime={project.frontmatter.date.toISOString()}>
+                          {formattedDate}
+                        </time>
+                      </div>
+                  </div>
+              </div>
+
+
+            </div>
+
+            <style>        
+                .TextContentCardTittle {
+                    font-size: calc((2 - 1) * 1.2vw + 1rem);
+                }
+                .icon-top{
+                    height: 1px;
+                    background-color: #000000;
+                    width: 24px;
+                }
+                .icon-bottom{
+                    height: 1px;
+                    transform: rotate(90deg);
+                    background-color: #000000;
+                    width: 24px;
+                    transition: all 0.2s ease-in-out;
+                }
+                .sectionContentComponentCard[data-is-open="true"] .icon-bottom{
+                    transform: rotate(0deg);
+                    transition: all 0.2s ease-in-out;
+                }
+                .btnMoreContent {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                }
                 
+                .titleContenteComponentCard {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      cursor: pointer; /* Agregamos el estilo de cursor para indicar que es clickeable */
+                  }
+          
+                  .sectionContentComponentCard {
+                      border-bottom: 1px solid #000000;
+                      border-top: 1px solid #000000;
+                      margin-bottom: 1rem;
+                      margin-top: 1rem;
+                      overflow: hidden; /* Evita que el contenido oculto afecte al diseño */
+                      max-height: 1000px; /* Valor suficientemente grande para manejar el contenido variado */
+                      transition: max-height 0.5s ease; /* Agregamos una transición suave de 0.5 segundos para la altura máxima */
+                  }
+          
+                  .captionCardContent {
+                      padding-top: 0px;
+                      padding-bottom: 15px;
+                      padding-left: 0px;
+                      padding-right: 0px;
+                      max-height: 0px; /* Por defecto, establecemos la altura máxima en 0 */
+                      overflow: hidden; /* Ocultamos el contenido que excede la altura máxima */
+                      opacity: 0; /* Por defecto, lo hacemos invisible */
+                      transition: max-height 0.5s ease, opacity 0.5s ease; /* Agregamos transiciones para altura y opacidad */
+                  }
+                  .dark .sectionContentComponentCard {
+                    border-bottom: 1px solid #ffffff;
+                    border-top: 1px solid #ffffff;
+                }
+                .dark .icon-bottom, .dark .icon-top {
+                    background-color: #ffffff;
+                }
+                
+            </style>
+                
+            
+
 
 
 
@@ -82,5 +175,25 @@ const sortedProjects = projects
         })
       }
     </ul>
+    <script>
+      var allCardTitles = document.querySelectorAll(".titleContenteComponentCard");
+
+allCardTitles.forEach(function(cardTitle) {
+    cardTitle.addEventListener("click", function() {
+        var captionCard = this.parentNode.querySelector('.captionCardContent');
+        var sectionContentCard = this.closest('.sectionContentComponentCard');
+
+        if (captionCard.style.maxHeight === "0px" || captionCard.style.maxHeight == "") {
+            captionCard.style.maxHeight = captionCard.scrollHeight + "px";
+            captionCard.style.opacity = "1";
+            sectionContentCard.setAttribute("data-is-open", "true");
+        } else {
+            captionCard.style.maxHeight = "0";
+            captionCard.style.opacity = "0";
+            sectionContentCard.setAttribute("data-is-open", "false");
+        }
+    });
+});
+    </script>
   </section>
 </PageLayout>
