@@ -1,0 +1,15 @@
+---
+import PageMeta from "../components/PageMeta.astro";
+import PageLayoutLinktree from "../layouts/PageLayoutLinktree.astro";
+import Intro from "../components/Intro.astro";
+import AboutTheTheme from "../components/AboutTheTheme.astro";
+import Linktree from "../components/linktree.astro";
+import { SITE_TITLE } from "../config";
+---
+
+<PageLayoutLinktree>
+  <PageMeta title={`${SITE_TITLE} | Portfolio`} slot="meta" />
+  <Fragment slot="main">
+    <Linktree />
+  </Fragment>
+</PageLayoutLinktree>
