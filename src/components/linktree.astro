@@ -390,17 +390,15 @@ const randomInteger = function(min, max) {
 const rgb = function(r, g, b) {
     return new THREE.Vector3(r, g, b);
 }
-var colors: [
-        // Define colors for each item. If more items than colors, then first color will be used as default
-        // Format { low: rgb(), high: rgb() for each color }
-        //{ low: rgb(0, 114, 255), high: rgb(48, 0, 255) },
-        // { low: rgb(236, 166, 15), high: rgb(233, 104, 0) },
-        // { low: rgb(43, 75, 235), high: rgb(213, 51, 248) },
-        // { low: rgb(175, 49, 49), high: rgb(123, 16, 16) }
+var colors = [
+         { low: rgb(0, 114, 255), high: rgb(48, 0, 255) },
+         { low: rgb(236, 166, 15), high: rgb(233, 104, 0) },
+         { low: rgb(43, 75, 235), high: rgb(213, 51, 248) },
+         { low: rgb(175, 49, 49), high: rgb(123, 16, 16) }
 ];
 
-var low =   rgb(0, 114, 255);
-var high = rgb(48, 0, 255);
+var low  =  colors[0].low;
+var high =  colors[0].high;
 
 const uniformData =  
 {
@@ -444,6 +442,18 @@ function animate() {
 
     renderer.render(scene, camera);
 }
+
+let clickcount = 0;
+document.body.addEventListener("click", function(){
+    if(clickcount == 3){
+        clickcount = 0;
+    }
+    clickcount++;
+    mesh.material.uniforms.u_lowColor.value = colors[clickcount].low;
+    mesh.material.uniforms.u_lowColor.value = colors[clickcount].high;
+ 
+    
+});
 
 animate();
 
