@@ -8,6 +8,7 @@ import GitHubGistEmbed from "./GitHubGistEmbed.astro";
 import CodeBlock from "./CodeBlock.astro";
 import Heading from "./Heading.astro";
 import ContactToMe from "./ContactToMe.astro";
+import carruselComponentServicesImages from "./carruselComponentServicesImages.astro"
 
 type Props = {
   content: Content;
@@ -34,6 +35,10 @@ const components = {
   },
   CodePenEmbed: {
     Component: CodePenEmbed,
+    props: {},
+  },
+  carruselComponentServicesImages:{
+    Component: carruselComponentServicesImages,
     props: {},
   },
   GitHubGistEmbed: {

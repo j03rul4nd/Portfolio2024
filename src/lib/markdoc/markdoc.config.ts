@@ -101,6 +101,17 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    carruselComponentServicesImages: {
+      render: "carruselComponentServicesImages",
+      attributes: {
+        imagesUrl1: { type: String, required: true },
+        imagesUrl2: { type: String, required: true },
+        imagesUrl3: { type: String, required: true },
+        imagesUrl4: { type: String, required: true },
+        imagesUrl5: { type: String, required: true },
+      },
+      selfClosing: true,
+    },
     githubgist: {
       render: "GitHubGistEmbed",
       attributes: {

@@ -15,17 +15,29 @@ Have you ever wished to bring your ideas to life quickly and easily? Allow me to
 
 [Explore the Project Here!](https://generateimagesia.onrender.com/)
 
+![ video gitf web site image generator ia ](/images/blog/generateImagesIa/coveriamgemeta.png)
+
 ### Generate Unique Images in Three Simple Steps
 
 1. **Write Your Idea**: Imagine having a blank canvas where you can express any thought. Enter a description or concept into our application's input field.
 2. **Let the AI Work**: By pressing the submit button, my system takes your description and uses a powerful AI API to generate a unique image based on your input.
 3. **Enjoy and Share Your Creation**: In a matter of seconds, the generated image will appear on your screen, ready to be downloaded or shared.
+![ video gitf web site image generator ia ](/images/blog/generateImagesIa/FluidLayouts.png)
 
 ### What Makes GenerateImagesAI Special?
 
 - **User-Friendly Interface**: Designed to be accessible to users of all technical levels, our platform ensures a hassle-free experience.
 - **Efficiency and Speed**: Thanks to an optimized backend, you will get results quickly, allowing you to explore multiple ideas without waiting.
 - **Superior Quality**: The AI I use is at the forefront of technology, ensuring high-quality images that will impress anyone.
+
+{% carruselComponentServicesImages  
+imagesUrl1="/images/blog/generateImagesIa/abstractfluid.png" 
+imagesUrl2="/images/blog/generateImagesIa/versionsabstractfluid.png" 
+imagesUrl3="/images/blog/generateImagesIa/dededed.png" 
+imagesUrl4="/images/blog/generateImagesIa/generateimageinput.png" 
+imagesUrl5="/images/blog/generateImagesIa/FluidLayouts.png" 
+ /%}
+
 
 ### Transformation and Innovation at Your Fingertips
 
