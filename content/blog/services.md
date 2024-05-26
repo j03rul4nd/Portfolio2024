@@ -7,7 +7,7 @@ date: 2024-05-26
 
 ogImagePath: /images/blog/services/coverservices.png
 ---
-![ video gitf web site image generator ia ](/images/blog/services/coverservices.png)
+![ SERVICES COVER ](/images/blog/services/coverservices.png)
 
 ## Boost Your Digital Presence with Advanced Software Development Services
 
@@ -19,6 +19,8 @@ Are you looking to take your online presence to the next level? You've come to t
 2. **AI-Powered Web Applications:** Want to integrate the power of machine learning into your web platform? I develop intelligent applications that streamline processes and enhance user experience.
 3. **Industrial Dashboards and OEE:** To optimize efficiency and productivity in industrial settings, I design custom control dashboards and Overall Equipment Effectiveness (OEE) tracking systems.
 4. **Web System and Component Designs:** From planning to implementation, I develop robust web systems and customized components that boost your platform's performance.
+![ Web System and Component Designs ](/images/blog/services/SERVICESYSTEMDESIGNS.png)
+
 5. **Web Services Consulting:** Need guidance in implementing effective web services? I offer specialized consulting to maximize your online presence's potential.
 6. **Industrial Applications Advisory:** With deep knowledge of industry needs and challenges, I provide expert advice for developing digital solutions tailored to the industrial sector.
 
