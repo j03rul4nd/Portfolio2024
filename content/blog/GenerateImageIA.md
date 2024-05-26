@@ -1,6 +1,6 @@
 ---
 external: false
-title: "Transform Your Ideas: GenerateImagesAI"
+title: "Transform Your Ideas: Generate Images AI"
 description: "Turn ideas into stunning images with artificial intelligence."
 date: 2024-05-26
 ogImagePath: /images/blog/generateImagesIa/giftCoverIaWebImagesGenerator.gif
