@@ -1,4 +1,12 @@
+---
+type Props = {
+  url: string;
+  title: string;
+  slug: string;
+};
 
+const { slug, url, title } = Astro.props;
+---
 <section class="relative shadow-2xl" id="ContactToMe">
     <div class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0" id="BackSectionContactToMe"></div>
 
@@ -12,7 +20,7 @@
         </a> -->
 
 
-        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        <h2 class="mb-4 mt-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Ignite Your Vision
         </h2>
         

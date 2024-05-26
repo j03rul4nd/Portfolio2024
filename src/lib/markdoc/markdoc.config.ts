@@ -92,6 +92,15 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    ContactToMe: {
+      render: "ContactToMe",
+      attributes: {
+        slug: { type: String, required: true },
+        url: { type: String, required: true },
+        title: { type: String, required: true },
+      },
+      selfClosing: true,
+    },
     githubgist: {
       render: "GitHubGistEmbed",
       attributes: {
