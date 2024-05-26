@@ -2,11 +2,12 @@
 draft: false
 external: false
 title: These are the services I provide
-description: These are the services I provide
-date: 2024-04-10
+description: Enhance online presence with tailored software solutions! Contact for captivating web design & AI-powered apps.
+date: 2024-05-26
 
-ogImagePath: /images/blog/particles/cover.gif
+ogImagePath: /images/blog/services/coverservices.png
 ---
+![ video gitf web site image generator ia ](/images/blog/services/coverservices.png)
 
 ## Boost Your Digital Presence with Advanced Software Development Services
 
