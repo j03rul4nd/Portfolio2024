@@ -16,13 +16,17 @@ Are you looking to take your online presence to the next level? You've come to t
 ### Services I Offer:
 
 1. **Landing Page Creation:** From grabbing attention to converting visitors into customers, I design and develop landing pages that yield tangible results.
+![ Landing Page Creation ](/images/blog/services/landignpagecreationservice.png)
 2. **AI-Powered Web Applications:** Want to integrate the power of machine learning into your web platform? I develop intelligent applications that streamline processes and enhance user experience.
+![ AI-Powered Web Applications](/images/blog/services/aiwebsiteservice.png)
 3. **Industrial Dashboards and OEE:** To optimize efficiency and productivity in industrial settings, I design custom control dashboards and Overall Equipment Effectiveness (OEE) tracking systems.
+![ Industrial Dashboards and OEE ](/images/blog/services/oee.png)
 4. **Web System and Component Designs:** From planning to implementation, I develop robust web systems and customized components that boost your platform's performance.
 ![ Web System and Component Designs ](/images/blog/services/SERVICESYSTEMDESIGNS.png)
-
 5. **Web Services Consulting:** Need guidance in implementing effective web services? I offer specialized consulting to maximize your online presence's potential.
+![ Web Services Consulting ](/images/blog/services/consultingWeb.png)
 6. **Industrial Applications Advisory:** With deep knowledge of industry needs and challenges, I provide expert advice for developing digital solutions tailored to the industrial sector.
+![ Industrial Applications Advisory ](/images/blog/services/advisory.png)
 
 ### Why Choose My Services?
 
