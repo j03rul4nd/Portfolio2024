@@ -101,6 +101,13 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    LetsTalk: {
+      render: "LetsTalk",
+      attributes: {
+        url: { type: String},
+      },
+      selfClosing: true,
+    },
     carruselComponentServicesImages: {
       render: "carruselComponentServicesImages",
       attributes: {

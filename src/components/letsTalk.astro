@@ -1,0 +1,138 @@
+---
+
+---
+<div class="sectionLetsTalk">
+
+    <div class="itemsectionLetsTalk">
+        <div class="titleLetsTalk">
+            Let's talk?
+        </div>
+    </div>
+
+    <div class="itemsectionLetsTalk">
+        <label for="nameLetsTalk" class="TietleSectionItemLetsTalkLabel">Tell me your name</label>
+        <input  type="text" name="name" placeholder="Jhon" class="inputLetsTalk" id="nameLetsTalk" aria-label="Name">
+    </div>
+    <div class="itemsectionLetsTalk">
+        <label for="mailletstalk" class="TietleSectionItemLetsTalkLabel">Your Mail</label>
+        <input type="text" name="email" placeholder="youremail@email.com" class="inputLetsTalk" id="mailletstalk" aria-label="Email">
+    </div>
+    <div class="itemsectionLetsTalk">
+        <label for="textAreaLetsTalkData" class="TietleSectionItemLetsTalkLabel">And Here, Tell me whatever you want. If it's related to your project, even better.</label>
+        <textarea name="" class="inputLetsTalk" id="textAreaLetsTalkData"
+        tabindex="0" 
+        autocomplete="off" 
+        autocorrect="off" 
+        autocapitalize="off" 
+        spellcheck="false" 
+        name="q" 
+        rows="2" 
+        placeholder="I want design system and web components for my UI" 
+        aria-label="I want design system and web components for my UI"
+        ></textarea>
+    </div>
+    <div class="itemsectionLetsTalk">
+        <div  id="btnsendtalk" class="butonSendLetsTalk">
+            <span>Send</span>
+            <div class="IconarrovLetsTalk">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.25403 1.46875C2.83987 1.46875 2.5041 1.80446 2.50403 2.21862C2.50396 2.63289 2.83977 2.96875 3.25403 2.96875H5.94325L1.47358 7.43842C1.18068 7.73131 1.18068 8.20619 1.47358 8.49908C1.76647 8.79197 2.24134 8.79197 2.53424 8.49908L7.00299 4.03033L7.00314 6.71982C7.00316 7.13345 7.34024 7.46875 7.75387 7.46875C8.16752 7.46875 8.50108 7.13342 8.50108 6.71978V2.21875C8.50108 1.80454 8.16529 1.46875 7.75108 1.46875H3.25403Z" fill="orange"></path></svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.titleLetsTalk {
+    font-weight: bold;
+    font-size: 2rem;
+    color: orange;
+}
+.inputLetsTalk {
+    background: none;
+    border: none;
+    border-bottom: 1px solid orange;
+    width: 100%;
+}
+.inputLetsTalk:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid orange;
+    box-shadow: none; /* Sombra */
+}
+.butonSendLetsTalk:hover{
+    background: #525252;
+}
+.sectionLetsTalk{
+    display: flex;
+    gap: 1rem;
+    background-color: #303634;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 1rem;
+}
+
+.itemsectionLetsTalk {
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.butonSendLetsTalk {
+    display: flex;
+    border: 1px solid orange;
+    gap: 1rem;
+    color: orange;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 1rem;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+    
+</style>
+<script>
+    //on:click={resendMSGemail}
+document.getElementById("btnsendtalk")?.addEventListener("click", async ()=>{
+    console.log("hola")
+    let user = document.getElementById("nameLetsTalk")?.value;
+    let correo = document.getElementById("mailletstalk")?.value;
+    let msg = document.getElementById("textAreaLetsTalkData")?.value;
+
+    // Verificar que los campos no estén vacíos, nulos o indefinidos
+    if (user !== undefined && user !== null && user.trim() !== "" &&
+        correo !== undefined && correo !== null && correo.trim() !== "" &&
+        msg !== undefined && msg !== null && msg.trim() !== "") {
+        await fetch("/api/sendEmail.json", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify({
+                from: correo, // 'onboarding@resend.dev',
+                to: 'joelbenitezdonari@gmail.com',
+                subject: `${user} | Services`,
+                html: `<p> ${msg} <strong>email frontend</strong>!</p>`,
+                text: "hi"
+            })
+        });
+    } else {
+        console.log("Todos los campos son obligatorios");
+    }
+
+})
+
+</script>
