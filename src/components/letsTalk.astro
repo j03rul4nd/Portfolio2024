@@ -42,6 +42,7 @@
 </div>
 
 <style>
+
 .titleLetsTalk {
     font-weight: bold;
     font-size: 2rem;
@@ -75,7 +76,9 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 1rem;
+    color: white;
 }
+
 
 .itemsectionLetsTalk {
     display: flex;
@@ -116,7 +119,7 @@ document.getElementById("btnsendtalk")?.addEventListener("click", async ()=>{
     if (user !== undefined && user !== null && user.trim() !== "" &&
         correo !== undefined && correo !== null && correo.trim() !== "" &&
         msg !== undefined && msg !== null && msg.trim() !== "") {
-        await fetch("/api/sendEmail.json", {
+        const res = await fetch("/api/sendEmail.json", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -129,6 +132,8 @@ document.getElementById("btnsendtalk")?.addEventListener("click", async ()=>{
                 text: "hi"
             })
         });
+        const responseData = await res.json();
+            console.log(responseData);
     } else {
         console.log("Todos los campos son obligatorios");
     }

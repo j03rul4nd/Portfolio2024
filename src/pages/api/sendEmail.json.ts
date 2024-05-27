@@ -23,6 +23,7 @@ export const POST: APIRoute = async({ params, request }) => {
                 html: html+ ` user email: ${from}`,
                 text: text
             });
+           
             //const data = await res.json();
             //console.log(data);
         }catch(e){
