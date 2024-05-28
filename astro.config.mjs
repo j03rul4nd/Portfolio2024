@@ -2,7 +2,7 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
-import node from '@astrojs/node';
+// import node from '@astrojs/node';
 
 /* 
   We are doing some URL mumbo jumbo here to tell Astro what the URL of your website will be.
@@ -13,7 +13,7 @@ import node from '@astrojs/node';
   If you don't know your website URL yet, don't worry about this
   and leave it empty or use localhost URL. It won't break anything.
 */
-import node from "@astrojs/node";
+//import node from "@astrojs/node";
 const SERVER_PORT = 3000;
 // the url to access your blog during local development
 const LOCALHOST_URL = `http://localhost:${SERVER_PORT}`;
@@ -34,13 +34,13 @@ export default defineConfig({
     port: SERVER_PORT
   },
   site: BASE_URL,
-  output: 'server',
+  // output: 'server',
   integrations: [sitemap(), tailwind({
     config: {
       applyBaseStyles: false
     }
   })],
-  adapter: node({
-    mode: "standalone"
-  })
+  // adapter: node({
+  //   mode: "standalone"
+  // })
 });

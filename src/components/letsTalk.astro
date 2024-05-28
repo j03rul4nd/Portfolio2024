@@ -119,7 +119,7 @@ document.getElementById("btnsendtalk")?.addEventListener("click", async ()=>{
     if (user !== undefined && user !== null && user.trim() !== "" &&
         correo !== undefined && correo !== null && correo.trim() !== "" &&
         msg !== undefined && msg !== null && msg.trim() !== "") {
-        const res = await fetch("/api/sendEmail.json", {
+        const res = await fetch('http://localhost:8080/send-email', {
             method: "POST",
             headers: {
                 "content-type": "application/json",
