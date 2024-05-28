@@ -145,6 +145,50 @@
     
 </style>
 <script>
+
+const textArea = document.getElementById("textAreaLetsTalkData");
+  const placeholderText = [
+  "I want design system and web components for my UI",
+    "Looking to build an AI-powered web application?",
+    "Need a custom industrial dashboard to optimize production?",
+    "Let's discuss your web services strategy!",
+    "I have a project requiring expert development guidance.",
+    "I need help developing a digital solution for the industrial sector.",
+    "Is your website not converting visitors into customers? Let's fix that!",
+    "Want to improve your brand identity with a sleek and modern design?",
+    "Do you need help with SEO optimization to get more organic traffic?",
+    "I can help you develop custom e-commerce functionalities for your online store.",
+    // Add more placeholder texts here
+    "Need a mobile app to streamline your business processes?",
+    "Want to integrate social media features into your website?",
+    "Struggling with data management and analysis? I can help!",
+    "Let's build a custom CRM system to manage your customer relationships.",
+    "Need help with cloud migration or infrastructure setup?",
+    "I can develop real-time data visualization dashboards for your business.",
+    "Want to create a chatbot to enhance your customer service?",
+    "I can help you implement gamification elements to boost user engagement.",
+    "Need a performance optimization audit for your website or application?",
+    "Let's discuss your cybersecurity needs and implement robust protection measures.",
+  ];
+  let currentPlaceholderIndex = 0;
+  let currentChar = 0;
+
+  function typeWriter() {
+    if (currentChar < placeholderText[currentPlaceholderIndex].length) {
+      textArea.placeholder = placeholderText[currentPlaceholderIndex].substring(0, currentChar + 1);
+      currentChar++;
+      setTimeout(typeWriter, 50); // Adjust speed here (lower number = faster typing)
+    } else {
+      currentChar = 0;
+      currentPlaceholderIndex++;
+      if (currentPlaceholderIndex === placeholderText.length) {
+        currentPlaceholderIndex = 0;
+      }
+      setTimeout(typeWriter, 1000); // Adjust pause between placeholders here
+    }
+  }
+
+  typeWriter();
     //on:click={resendMSGemail}
 document.getElementById("btnsendtalk")?.addEventListener("click", async ()=>{
     console.log("hola")
