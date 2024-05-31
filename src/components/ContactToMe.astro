@@ -57,7 +57,7 @@ const { slug, url, title } = Astro.props;
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
 <script>
-document.getElementById('copyBtn').addEventListener('click', function() {
+document.getElementById('copyBtn')?.addEventListener('click', function() {
     event.preventDefault()
     // Seleccionar el texto del correo electrónico
     var emailText = document.getElementById('defaultEmail');
