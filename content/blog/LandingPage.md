@@ -19,6 +19,8 @@ In today's digital environment, an effective landing page can be key to attracti
 
 ## Service Features
 
+{% PlanStandar /%}
+
 ### Cutting-Edge Technology with Astro
 
 We use **Astro**, a modern tool that allows us to create ultra-fast static pages. Astro improves loading time and SEO, ensuring your landing page is efficient and well-positioned in search engines.
@@ -80,6 +82,5 @@ We recommend hosting compatible with Astro, which is not limited to WordPress on
 If you're ready to take your business to the next level with a high-performance landing page, **contact us today**. Let's work together to create a page that is not only attractive but also effective and tailored to your needs.
 
 {% LetsTalk /%}
-
 
 

@@ -108,6 +108,13 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    PlanStandar: {
+      render: "PlanStandar",
+      attributes: {
+        url: { type: String},
+      },
+      selfClosing: true,
+    },
     carruselComponentServicesImages: {
       render: "carruselComponentServicesImages",
       attributes: {

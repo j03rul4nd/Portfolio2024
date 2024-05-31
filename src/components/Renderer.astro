@@ -10,6 +10,7 @@ import Heading from "./Heading.astro";
 import ContactToMe from "./ContactToMe.astro";
 import carruselComponentServicesImages from "./carruselComponentServicesImages.astro"
 import LetsTalk from "./letsTalk.astro"
+import PlanStandar from "./planStandard.astro"
 type Props = {
   content: Content;
 };
@@ -51,6 +52,10 @@ const components = {
   },
   LetsTalk:{
     Component: LetsTalk,
+    props: {},
+  },
+  PlanStandar:{
+    Component: PlanStandar,
     props: {},
   }
 };
