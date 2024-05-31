@@ -31,9 +31,8 @@ We work with you to create a page with an **attractive and up-to-date design**. 
 
 ### Collaborative and Efficient Process
 
-1. **Initial Meeting**: We discuss your needs and goals.
-2. **Sketch and Beta**: We present a sketch and a beta version in the first week.
-3. **Revisions**: You have up to three revisions to perfect the design and functionalities.
+{% stepsService /%}
+
 
 ### Pricing and Timelines
 

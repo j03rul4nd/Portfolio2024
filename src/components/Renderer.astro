@@ -12,6 +12,7 @@ import carruselComponentServicesImages from "./carruselComponentServicesImages.a
 import LetsTalk from "./letsTalk.astro"
 import PlanStandar from "./planStandard.astro"
 import servicesCompatiblesAstro from "./servicesCompatiblesAstro.astro"
+import stepsService from "./stepsService.astro"
 type Props = {
   content: Content;
 };
@@ -61,6 +62,10 @@ const components = {
   },
   servicesCompatiblesAstro:{
     Component: servicesCompatiblesAstro,
+    props: {},
+  },
+  stepsService:{
+    Component: stepsService,
     props: {},
   }
 };

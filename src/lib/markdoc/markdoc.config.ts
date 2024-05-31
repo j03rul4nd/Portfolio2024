@@ -123,6 +123,17 @@ export const config: Config = {
       selfClosing: true,
 
     },
+
+    stepsService: {
+      render: "stepsService",
+      attributes: {
+        url: { type: String},
+      },
+      selfClosing: true,
+
+    },
+
+    
     carruselComponentServicesImages: {
       render: "carruselComponentServicesImages",
       attributes: {
