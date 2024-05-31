@@ -30,7 +30,6 @@ We use **Astro**, a modern tool that allows us to create ultra-fast static pages
 We work with you to create a page with an **attractive and up-to-date design**. We listen to your ideas and visual references to ensure the final page reflects your vision.
 
 ### Collaborative and Efficient Process
-
 {% stepsService /%}
 
 

@@ -6,7 +6,7 @@
     <div class="sectionservices" id="titleservicesSection">
         <span>These are the services I provide &nbsp;</span>
         <div class="imagesectionhandsERVICES">
-            <img src="./images/hand.png" alt="" sizes="" srcset="">
+            <img id="emojihandtobotom" src="./images/hand.png" alt="" sizes="" srcset="">
          </div>
         <!-- These are the services I provide   blog/services -->
     </div>
@@ -41,6 +41,19 @@
 <!-- aplication consultant webservice -->
 
 <style>
+   
+    @keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px); /* Ajusta esta cantidad según sea necesario */
+      }
+    }
+
+    #emojihandtobotom {
+      animation: moveUpDown 1s ease-in-out infinite;
+    }
     .itemsectionarrowmoredata {
         display: flex;
         background: #00000021;
