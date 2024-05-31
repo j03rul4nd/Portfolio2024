@@ -11,6 +11,7 @@ import ContactToMe from "./ContactToMe.astro";
 import carruselComponentServicesImages from "./carruselComponentServicesImages.astro"
 import LetsTalk from "./letsTalk.astro"
 import PlanStandar from "./planStandard.astro"
+import servicesCompatiblesAstro from "./servicesCompatiblesAstro.astro"
 type Props = {
   content: Content;
 };
@@ -56,6 +57,10 @@ const components = {
   },
   PlanStandar:{
     Component: PlanStandar,
+    props: {},
+  },
+  servicesCompatiblesAstro:{
+    Component: servicesCompatiblesAstro,
     props: {},
   }
 };

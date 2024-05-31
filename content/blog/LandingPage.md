@@ -43,6 +43,8 @@ Prices start at **90 euros**, varying based on project complexity. The delivery 
 
 We provide you with the file ready to deploy on your server, compatible with hosting that supports Astro. We also offer a deployment service for an additional cost.
 
+{% servicesCompatiblesAstro /%}
+
 ## FAQs (Frequently Asked Questions)
 
 **What is a landing page?**

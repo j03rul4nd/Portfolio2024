@@ -115,6 +115,14 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    servicesCompatiblesAstro: {
+      render: "servicesCompatiblesAstro",
+      attributes: {
+        url: { type: String},
+      },
+      selfClosing: true,
+
+    },
     carruselComponentServicesImages: {
       render: "carruselComponentServicesImages",
       attributes: {
