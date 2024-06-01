@@ -45,37 +45,7 @@ We provide you with the file ready to deploy on your server, compatible with hos
 
 ## FAQs (Frequently Asked Questions)
 
-**What is a landing page?**
-
-A landing page is a web page specifically designed to convert visitors into leads or customers, focusing on a specific offer or action.
-
-**How long does it take to develop a landing page?**
-
-The average time is two weeks, depending on the complexity and necessary revisions.
-
-**What does the 90 euros price include?**
-
-The initial price includes the basic design of the landing page and three revisions. Additional functionalities may incur extra costs.
-
-**Can I see the progress before the final delivery?**
-
-Yes, you will receive a sketch and a beta version during the first week for your approval.
-
-**What if I need more than three revisions?**
-
-Additional revisions can be made at an extra cost. Our goal is to ensure your satisfaction with the fewest changes.
-
-**Does the service include landing page deployment?**
-
-Deployment is not included in the initial price, but we offer this service for an additional cost.
-
-**Can I request specific features like email sending or e-commerce integration?**
-
-Yes, we can add special features like email sending, appointment management, or integration with platforms like Shopify, with additional costs depending on complexity.
-
-**What type of hosting do I need for my landing page?**
-
-We recommend hosting compatible with Astro, which is not limited to WordPress only, to ensure optimal performance of your page.
+{% acordiationserviceslandingpage /%}
 
 ## Contact Us
 

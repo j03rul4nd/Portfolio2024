@@ -132,6 +132,14 @@ export const config: Config = {
       selfClosing: true,
 
     },
+    acordiationserviceslandingpage:{
+      render: "acordiationserviceslandingpage",
+      attributes: {
+        url: { type: String},
+      },
+      selfClosing: true,
+
+    },
 
     
     carruselComponentServicesImages: {
