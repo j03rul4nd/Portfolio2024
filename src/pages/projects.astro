@@ -66,9 +66,19 @@ const sortedProjects = projects
                 class="flex justify-center	 h-auto max-w-full" 
                 style="background-image: none">
 
-                  <img class="w-full h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" 
-                      src={project.frontmatter.ogImagePath}
-                      alt="image description">
+                  <div class="sectionContentImgProjectsCover">
+                    <img class="w-full h-auto max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" 
+                        src={project.frontmatter.ogImagePath}
+                        alt="image description">
+
+                    <div class="sectionhrefToLinkCoveProject">
+                      <div class="sectionIconHoverprojects">
+                        <div class="IconToLink">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.25403 1.46875C2.83987 1.46875 2.5041 1.80446 2.50403 2.21862C2.50396 2.63289 2.83977 2.96875 3.25403 2.96875H5.94325L1.47358 7.43842C1.18068 7.73131 1.18068 8.20619 1.47358 8.49908C1.76647 8.79197 2.24134 8.79197 2.53424 8.49908L7.00299 4.03033L7.00314 6.71982C7.00316 7.13345 7.34024 7.46875 7.75387 7.46875C8.16752 7.46875 8.50108 7.13342 8.50108 6.71978V2.21875C8.50108 1.80454 8.16529 1.46875 7.75108 1.46875H3.25403Z" fill="white"></path></svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </a>
 
             <div class="sectionDataInfo">
@@ -98,7 +108,58 @@ const sortedProjects = projects
 
             </div>
 
-            <style>        
+            <style>  
+
+              .sectionhrefToLinkCoveProject {
+                  position: absolute;
+                  display: flex;
+                  /* background: red; */
+                  width: 99%;
+                  height: 99%;
+                  z-index: 8;
+                  top: 0;
+                  border-radius: 1rem;
+                  justify-content: flex-end;
+                  align-content: flex-start;
+                  flex-direction: row;
+                  align-items: flex-start;
+              }
+
+              .sectionContentImgProjectsCover img{
+                position: relative;
+              }
+
+              .IconToLink {
+                  
+                  width: 100%;
+                  height: 100%;
+                  z-index: 9;
+                  display: flex;
+                  top: 0;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+              }
+              .sectionIconHoverprojects {
+                  display: flex;
+                  background: #00000021;
+                  background: rgba(255, 255, 255, 0.337);
+                  border-radius: 0.8rem;
+                  padding: 5px;
+                  margin: 5px;
+                  width: 24px;
+                  height: 24px;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+              }
+
+                  .sectionContentImgProjectsCover {
+                      position: relative;
+                      border: 1px solid white;
+                      border-radius: 1rem;
+                      padding: 5px;
+                  }      
                 .TextContentCardTittle {
                     font-size: calc((2 - 1) * 1.2vw + 1rem);
                 }
@@ -126,6 +187,7 @@ const sortedProjects = projects
                 }
                 
                 .titleContenteComponentCard {
+                     gap: 1rem;
                       display: flex;
                       flex-direction: row;
                       justify-content: space-between;
