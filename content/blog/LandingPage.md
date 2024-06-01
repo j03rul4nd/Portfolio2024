@@ -25,6 +25,8 @@ In today's digital environment, an effective landing page can be key to attracti
 
 We use **Astro**, a modern tool that allows us to create ultra-fast static pages. Astro improves loading time and SEO, ensuring your landing page is efficient and well-positioned in search engines.
 
+![ SERVICES  Landing Page COVER ](/images/blog/services/astrois.png)
+
 ### Modern Design Tailored to Your Needs
 
 We work with you to create a page with an **attractive and up-to-date design**. We listen to your ideas and visual references to ensure the final page reflects your vision.
