@@ -29,9 +29,16 @@ We use **Astro**, a modern tool that allows us to create ultra-fast static pages
 
 We work with you to create a page with an **attractive and up-to-date design**. We listen to your ideas and visual references to ensure the final page reflects your vision.
 
+{% carruselComponentServicesImages  
+imagesUrl1="/images/blog/services/layoutsastro_1.png" 
+imagesUrl2="/images/blog/services/layoutsastro_2.png" 
+imagesUrl3="/images/blog/services/layoutsastro_3.png" 
+imagesUrl4="/images/blog/services/layoutsastro_4.png"  
+imagesUrl5="/images/blog/services/layoutsastro_5.png"   
+ /%}
+
 ### Collaborative and Efficient Process
 {% stepsService /%}
-
 
 ### Pricing and Timelines
 
