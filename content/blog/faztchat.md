@@ -5,7 +5,7 @@ title: Instant, Secure Chats with Fast Chat
 description: Transform Your Conversations with Fast Chat's Instant and Secure Messaging.
 date: 2024-06-06
 
-ogImagePath: /images/blog/fastchat/demo_1.gif
+ogImagePath: /images/blog/fastchat/v2_fift.gif
 ---
 
 {% Videoembed url="/images/blog/fastchat/demo_1_vid.mp4" /%}
