@@ -14,7 +14,7 @@ import PlanStandar from "./planStandard.astro"
 import servicesCompatiblesAstro from "./servicesCompatiblesAstro.astro"
 import stepsService from "./stepsService.astro"
 import acordiationserviceslandingpage from "./acordiationserviceslandingpage.astro"
-
+import Videoembed from "./videoembed.astro";
 
 type Props = {
   content: Content;
@@ -73,6 +73,10 @@ const components = {
   },
   acordiationserviceslandingpage:{
     Component: acordiationserviceslandingpage,
+    props: {},
+  },
+  Videoembed: {
+    Component: Videoembed,
     props: {},
   }
 

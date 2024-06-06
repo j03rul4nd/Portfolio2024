@@ -1,0 +1,24 @@
+---
+type Props = {
+  url: string;
+  label: string;
+};
+
+const { url } = Astro.props;
+---
+<div>
+    <div>
+        <video 
+            class="aspect-video w-full"
+            controls
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        >
+            <source src={url} type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    
+      
+  </div>
+  

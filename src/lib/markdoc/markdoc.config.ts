@@ -76,6 +76,13 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    Videoembed:{
+      render: "Videoembed",
+      attributes: {
+        url: { type: String, required: true },
+      },
+      selfClosing: true,
+    },
     tweet: {
       render: "TweetEmbed",
       attributes: {
