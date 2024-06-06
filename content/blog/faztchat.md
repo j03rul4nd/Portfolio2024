@@ -24,10 +24,15 @@ In a world where immediacy and security are crucial, I have developed an innovat
 
 We have all experienced the frustration of needing to start a quick and secure conversation with a client or colleague, only to be hindered by lengthy registration processes or the discomfort of using more intimate platforms like WhatsApp. These systems often require sharing unnecessary personal information or do not offer adequate privacy for sensitive discussions.
 
+![ fast caht Page COVER ](/images/blog/fastchat/coverchatfast.png)
+
+
 ## The Solution: Fast Chat
 
 My project directly addresses these issues. The web application I developed, Fast Chat, allows users to create a chat room in seconds. Using modern tools like Vite and Node.js, along with WebSocket technology, I built a system that is fast, secure, and easy to use.
 
+
+![ fast chat simulation demo Page COVER ](/images/blog/fastchat/chatsimulation.gif)
 ## Key Features:
 
 1. **Simple Room Creation**: Without the need for registration, a user can create a chat room and share the link or the room code with other users.
