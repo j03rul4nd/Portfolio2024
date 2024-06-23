@@ -6,6 +6,8 @@ ogImagePath: /images/blog/metahead/coverSEO.png
 external: false
 
 ---
+![ Meta Head Configurator COVER ](/images/blog/metahead/coverSEO.png)
+
 
 # Meta Head Configurator: Simplifying SEO and Social Media Optimization
 
