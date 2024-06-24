@@ -78,6 +78,8 @@ This snippet captures user inputs for the title, description, and keywords, and 
 By simplifying the meta tag generation process, **Meta Head Configurator** meets a significant need for website owners, marketers, and developers. It ensures that websites are optimized for search engines and social media platforms, leading to better visibility, improved user engagement, and ultimately, higher conversion rates.
 
 This project not only showcases technical skills in web development but also highlights the ability to identify and solve real-world problems with innovative solutions. It's a testament to a commitment to enhancing user experience and improving web standards, making it a valuable addition to any portfolio.
+![ Meta Head Configurator card seo Share ](/images/blog/metahead/cardseoShare.png)
+
 
 **Meta Head Configurator** is more than just a tool—it's a bridge between technical complexity and user-friendly solutions, demonstrating the power of thoughtful web development.
 
