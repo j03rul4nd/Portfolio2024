@@ -1,7 +1,7 @@
 ---
 external: false
 title: GiSize Maps, Real-Time GIS Data for Industrial Automation
-description: advanced GIS integration for enhanced asset management in industrial environments.
+description: Advanced GIS integration for enhanced asset management in industrial environments.
 date: 2024-05-26
 ogImagePath: /images/projects/GisizeMaps/CardGisizeMaps.png
 draft: false
