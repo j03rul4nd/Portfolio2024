@@ -13,7 +13,17 @@ draft: false
 ### Introduction
 
 Working on the GiSize Maps project has been a transformative experience, not just because of the final product but also due to the personal and professional development I have undergone. GiSize Maps, formerly known as Geospatial, is a revolutionary application in the field of geographic information systems (GIS) and industrial automation. In this article, I will share my experience and the impact my work had on the project's success, highlighting the skills and contributions that make me a valuable asset to any company.
+
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/grid.PNG)
+
 [Explore the Project Here!](https://www.gisize.com/geospatial-module/)
+
+
+
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/FaceplateSlide.png)
+
+
+
 
 [Explore the Demo Here!](https://game.gisize.com/) 
 
@@ -40,7 +50,6 @@ GiSize Maps is an advanced GIS tool that enhances the visualization and navigati
 - **ArchestrA Graphics:** Rendering of ArchestrA graphics within maps.
 
 ![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/metro_3-1.png)
-
 
 ### My Contributions to the Project
 
@@ -83,6 +92,8 @@ Developing GiSize Maps allowed me to acquire and refine a wide range of technica
 - **Software Architecture:** Designed a modular and scalable architecture capable of adapting to various configurations and user needs.
 - **Advanced GIS System Development:** Learned to integrate multiple types of maps and GIS services, enhancing spatial data visualization and analysis capabilities.
 - **User Interface Design:** Developed a fully customizable interface using a design system that allows fine adjustments to all visual components.
+
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/ComponentMapProviderAll.png)
 
 ### Success Stories: GiSize Maps Implementations
 
