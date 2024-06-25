@@ -13,6 +13,9 @@ draft: false
 ### Introduction
 
 Working on the GiSize Maps project has been a transformative experience, not just because of the final product but also due to the personal and professional development I have undergone. GiSize Maps, formerly known as Geospatial, is a revolutionary application in the field of geographic information systems (GIS) and industrial automation. In this article, I will share my experience and the impact my work had on the project's success, highlighting the skills and contributions that make me a valuable asset to any company.
+[Explore the Project Here!](https://www.gisize.com/geospatial-module/)
+
+[Explore the Demo Here!](https://game.gisize.com/) 
 
 {% Videoembed url="/images/blog/gisizemaps/GISIZE_Sectors.mp4" /%}
 
