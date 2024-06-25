@@ -7,6 +7,9 @@ ogImagePath: /images/projects/GisizeMaps/CardGisizeMaps.png
 draft: false
 --- 
 
+![ M ](/images/blog/gisizemaps/demo_1.PNG)
+
+
 ### Introduction
 
 Working on the GiSize Maps project has been a transformative experience, not just because of the final product but also due to the personal and professional development I have undergone. GiSize Maps, formerly known as Geospatial, is a revolutionary application in the field of geographic information systems (GIS) and industrial automation. In this article, I will share my experience and the impact my work had on the project's success, highlighting the skills and contributions that make me a valuable asset to any company.
@@ -35,6 +38,7 @@ GiSize Maps is an advanced GIS tool that enhances the visualization and navigati
 
 ![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/metro_3-1.png)
 
+
 ### My Contributions to the Project
 
 {% carruselComponentServicesImages  
@@ -42,7 +46,7 @@ imagesUrl1="/images/blog/gisizemaps/demo_1.PNG"
 imagesUrl2="/images/blog/gisizemaps/grid.PNG" 
 imagesUrl3="/images/blog/gisizemaps/search.PNG" 
 imagesUrl4="/images/blog/gisizemaps/singapure.PNG" 
-imagesUrl5="/images/blog/gisizemaps/game_gisize.PNG" 
+imagesUrl5="/images/blog/gisizemaps/game_gisize.png"  
  /%}
 
 ### 1. Platform Migration
