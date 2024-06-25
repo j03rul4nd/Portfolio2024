@@ -97,6 +97,9 @@ Developing GiSize Maps allowed me to acquire and refine a wide range of technica
 
 ### Success Stories: GiSize Maps Implementations
 
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/coverrr.PNG)
+
+
 ### 1. Barcelona Smart City
 
 Barcelona has initiated several projects to become a smart city. Working alongside AVEVA Software, GiSize Maps has been a key part of this success. The solution was crucial for improving and managing urban resources such as elevators, escalators, public fountains, and irrigation systems for municipal parks and gardens. Utilizing AVEVA-Wonderware System Platform, GiSize Maps provides a geospatial view of assets in real-time, allowing total control from the map. Operators can access this information both in the control room and in the field via touch tablets and remote access.
