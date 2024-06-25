@@ -11,9 +11,14 @@ draft: false
 
 Working on the GiSize Maps project has been a transformative experience, not just because of the final product but also due to the personal and professional development I have undergone. GiSize Maps, formerly known as Geospatial, is a revolutionary application in the field of geographic information systems (GIS) and industrial automation. In this article, I will share my experience and the impact my work had on the project's success, highlighting the skills and contributions that make me a valuable asset to any company.
 
+{% Videoembed url="/images/blog/gisizemaps/GISIZE_Sectors.mp4" /%}
+
 ### What is GiSize Maps?
 
 GiSize Maps is an advanced GIS tool that enhances the visualization and navigation of spatial or geographic data in the AVEVA System Platform. This tool integrates multiple industrial protocols and GIS platforms, allowing users to visualize assets in real-time with customized data and animations. GiSize Maps connects with standard GIS providers (ESRI/ARCGIS, OpenStreetMaps, GoogleMaps, Bing) via WMS and WFS services, and also allows the creation of custom map providers based on images or vector files.
+
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/metro_1.png)
+
 
 **Key Features of GiSize Maps:**
 
@@ -28,15 +33,29 @@ GiSize Maps is an advanced GIS tool that enhances the visualization and navigati
 - **Native Controls:** Native Multi-touch and gesture controls.
 - **ArchestrA Graphics:** Rendering of ArchestrA graphics within maps.
 
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/metro_3-1.png)
+
 ### My Contributions to the Project
+
+{% carruselComponentServicesImages  
+imagesUrl1="/images/blog/gisizemaps/demo_1.PNG" 
+imagesUrl2="/images/blog/gisizemaps/grid.PNG" 
+imagesUrl3="/images/blog/gisizemaps/search.PNG" 
+imagesUrl4="/images/blog/gisizemaps/singapure.PNG" 
+imagesUrl5="/images/blog/gisizemaps/game_gisize.PNG" 
+ /%}
 
 ### 1. Platform Migration
 
 One of the most significant challenges was migrating the service, which initially only operated on OMI of System Platform, to also be available on the web. This process involved developing a flexible and scalable architecture that allowed users to access the service from any internet-connected device. This migration not only expanded the reach of GiSize Maps but also improved the product’s accessibility and usability.
 
+
 ### 2. Design and Responsiveness
 
 Creating an intuitive and visually appealing user interface was one of my main responsibilities. I ensured that every component was fully responsive, achieving pixel-perfect accuracy. This guarantees a consistent and pleasant user experience across all devices, from large desktop screens to small smartphones.
+
+![ M ](/images/blog/gisizemaps/palette.PNG)
+![ M ](/images/blog/gisizemaps/palettedesign.PNG)
 
 ### 3. Documentation and User Support
 
@@ -45,6 +64,9 @@ I developed comprehensive web documentation that serves as a user guide for both
 ### 4. Innovation in GIS Systems
 
 During the project, I implemented advanced GIS development techniques using tools like Leaflet. I integrated WMS and offline maps, and worked with Mapbox and SVG to create highly interactive and customizable maps. These advanced capabilities enable end-users to visualize complex data clearly and efficiently.
+
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/layers.webp)
+
 
 ### Skills and Knowledge Acquired
 
@@ -61,6 +83,14 @@ Developing GiSize Maps allowed me to acquire and refine a wide range of technica
 
 Barcelona has initiated several projects to become a smart city. Working alongside AVEVA Software, GiSize Maps has been a key part of this success. The solution was crucial for improving and managing urban resources such as elevators, escalators, public fountains, and irrigation systems for municipal parks and gardens. Utilizing AVEVA-Wonderware System Platform, GiSize Maps provides a geospatial view of assets in real-time, allowing total control from the map. Operators can access this information both in the control room and in the field via touch tablets and remote access.
 
+{% carruselComponentServicesImages  
+imagesUrl1="/images/blog/gisizemaps/geospatial_1.png" 
+imagesUrl2="/images/blog/gisizemaps/geospatial_2.png" 
+imagesUrl3="/images/blog/gisizemaps/geospatial_3.png" 
+imagesUrl4="/images/blog/gisizemaps/geospatial_4.png" 
+imagesUrl5="/images/blog/gisizemaps/gisize-gis-img-3.webp" 
+ /%}
+
 ### 2. Ashghal Qatar Water & Wastewater
 
 In Doha, Qatar, GiSize Maps along with AVEVA Software has been crucial in transforming the metropolitan area into a smart city. The integrated solution allows the management of over half a million assets in real-time from the existing ArcGIS/Esri platform. Operators can view the irrigation pipe network, distributed assets such as sewers or pumps, and the real-time position of maintenance vehicles, all from an interactive map.
@@ -73,7 +103,6 @@ Continuing their process of becoming a smart city, Barcelona once again trusted 
 
 In Navarra, Spain, the Almandoz and Belate tunnels have upgraded their control systems to comply with European safety regulations. GiSize Maps provided predefined industrial templates and graphics that helped meet all the tunnel infrastructure requirements. Additionally, the Scheduler and Sequencer module of GiSize Maps enabled the creation of automatic plans, such as the anti-fog plan or the fire action plan.
 
-!https://prod-files-secure.s3.us-west-2.amazonaws.com/d389df9b-3cf0-4b46-a93a-a4b35ed610f9/f67e2053-6006-46ea-be4e-e6cae20c8a0b/Untitled.png
 
 ### Work Values and Philosophy
 
@@ -93,3 +122,4 @@ My experience in developing GiSize Maps has been a demonstration of my technical
 
 This article not only highlights my participation in the project but also underscores the importance of collaboration, creativity, and dedication in developing advanced technological solutions. I am eager to continue applying these principles in future projects, contributing to the success of my team and the advancement of the industry.
 
+![ Meta Head Configurator card seo Share ](/images/blog/gisizemaps/gisize-gis-img-4.webp)
