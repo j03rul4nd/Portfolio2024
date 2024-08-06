@@ -349,6 +349,58 @@
 .animate {
     transform: translateY(-100%);
 }
+
+
+
+.btnJoin {
+    color: white; /* Color del texto */
+    border-radius: 9999px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    font-size: 1rem; /* Ajusta el tamaño del texto para que sea responsive */
+}
+
+.btnJoin::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #ff4b1f, #ff9068);
+    z-index: -1;
+}
+
+.btnJoin:hover {
+    color: white;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnJoin:hover::before {
+    background: linear-gradient(45deg, #ff4b1f, #ff9068);
+}
+
+@media (max-width: 768px) {
+    .btnJoin {
+        font-size: 0.875rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .btnJoin {
+        font-size: 0.75rem; /* Ajusta el tamaño del texto para pantallas aún más pequeñas */
+    }
+}
+
 </style>
 
 
