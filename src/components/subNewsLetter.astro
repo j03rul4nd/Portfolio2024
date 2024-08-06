@@ -1,0 +1,681 @@
+<div class="container-recommendation">
+    <div class="flex background-section">
+        <div class="flex-1 landing-column animate-sliding-up columnn">
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Carlos Lopez"
+                    title="Revolutionary IIoT Insights"
+                    comment="The IIoT tips are revolutionary. I implemented them and the results were impressive. Keep it up!"
+                    goodStars="5">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Ana Martin"
+                    date="July 28, 2024"
+                    title="WebGL and Three.js Mastery"
+                    comment="The WebGL and Three.js article was amazing and easy to follow. Great job!"
+                    goodStars="5"
+                    gradient-border
+                    gradient-color="linear-gradient(to right bottom, rgb(244, 244, 245), rgb(63, 63, 70))">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Ricardo Perez"
+                    title="Node-RED Expertise"
+                    comment="The Node-RED articles are very in-depth and informative. Highly recommended."
+                    goodStars="5">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Sophia Martinez"
+                    date="August 3, 2024"
+                    title="Advanced GIS Techniques"
+                    goodStars="5">
+                </user-comment>
+            </div>
+        </div>
+    
+        <div class="flex-1 landing-column animate-sliding-down columnn" style="animation-delay: 0.15s;">
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    gradient-border
+                    gradient-color="linear-gradient(to right bottom, rgb(244, 244, 245), rgb(63, 63, 70))"
+                    name="Laura Gomez"
+                    date="August 5, 2024"
+                    title="Invaluable IIoT Advice"
+                    comment="The IIoT article was a game-changer. Clear and practical insights. Looking forward to more!"
+                    goodStars="5">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="David Ramirez"
+                    title="Top-notch Dev Tips"
+                    comment="The dev tips gave me new perspectives for my projects. Definitely sharing with my team."
+                    goodStars="4"
+                    noGoodStars="1">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Maria Fernandez"
+                    date="July 25, 2024"
+                    title="IIoT Article Excellence"
+                    goodStars="5">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Jorge Sanchez"
+                    date="July 18, 2024"
+                    title="Engaging and Practical"
+                    comment="Your articles are engaging and practical. The one on methodologies was especially useful."
+                    goodStars="5"
+                    noGoodStars="0">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Elena Ruiz"
+                    title="Essential for Developers"
+                    comment="Every developer should read this. Packed with useful insights. The software architecture article was great."
+                    goodStars="4">
+                </user-comment>
+            </div>
+        </div>
+    
+        <div class="flex-1 landing-column animate-sliding-up columnn" style="animation-delay: 0.3s;">
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Michael Johnson"
+                    date="July 20, 2024"
+                    title="IIoT Knowledge Bomb"
+                    comment="This newsletter is a goldmine for IIoT. Useful info that I could apply directly to my work."
+                    gradient-border
+                    gradient-color="linear-gradient(to right bottom, rgb(244, 244, 245), rgb(63, 63, 70))">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="James Miller"
+                    date="June 10, 2024"
+                    title="Fantastic Content"
+                    comment="Top-notch content. Well-researched and easy to understand. The software architecture piece was enlightening."
+                    goodStars="5">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Alice Cooper"
+                    date="August 5, 2024"
+                    title="Incredibly Insightful"
+                    comment="The IIoT article was a game changer. Practical insights and clear explanations."
+                    goodStars="5"
+                    noGoodStars="0">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Brian Lewis"
+                    title="Great Dev Tips"
+                    goodStars="4"
+                    noGoodStars="1">
+                </user-comment>
+            </div>
+            <div class="comment-padding">
+                <user-comment
+                    class="animated-comment"
+                    name="Clara Evans"
+                    title="IIoT Article Rocks"
+                    comment="Loved the IIoT article! Perfect balance of theory and practical advice."
+                    goodStars="5">
+                </user-comment>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="infoDiv">
+        <div class="custom-container">            
+            <div class="flex flex-col justify-center text-center cntrTitlesCaption" style="align-items: center">
+                <h2 class="type-huge mb-8 text-4xl font-extrabold">Subscribe to my Newsletter</h2>
+                <p class="type-subtitle mb-20 inline-block sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Join over <span class="flip-clock" id="numberSubs">1000</span> subscribers and receive the latest updates.</p>
+                <div class="flex-center flex space-x-6 cntrBtn">
+                    <a class="custom-button btnJoin" target="_blank" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=6966420118167777280">
+                        <span class="flex-center">Subscribe Now</span>
+                    </a>
+                    <a class="text-primary hover:text-muted btnLoginInfo" title="Read my newsletter" target="_blank" href="https://www.linkedin.com/newsletters/iot-la-industria-4-0-6966420118167777280/">Read my newsletters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+.columnn{
+    height: 1900px;
+}
+
+.container-recommendation {
+    margin-top: 1rem;
+    padding: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #000;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#overlay {
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-section {
+    display: flex;
+    padding: 0 2.1875%;
+    z-index: 2;
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .landing-column {
+        padding: 0;
+    }
+}
+
+#infoDiv {
+    position: relative;
+    z-index: 3; 
+    color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.type-huge {
+    font-weight: 600;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin-bottom: 1rem;
+}
+
+.type-subtitle {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.custom-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cntrBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btnJoin {
+    color: rgba(5,5,5,1);
+    border-radius: 9999px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.btnJoin:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.421);
+    border: 2px solid rgb(0, 179, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.cntrTitlesCaption {
+    flex-direction: column;
+}
+
+.btnLoginInfo {
+    color: white;
+}
+
+.cntrArefInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.superCntrAreaInfo {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.superCntrAreaInfo a {
+    text-decoration: none;
+    color: white;
+}
+
+.landing-column > div {
+    padding: 0 6.5625% 6.5625%;
+}
+
+.landing-column {
+    flex: 1;
+    overflow: hidden;
+}
+
+.animate-sliding-up {
+    animation: slide-up 6s infinite alternate ease-in-out;
+}
+
+.animate-sliding-down {
+    animation: slide-down 15s infinite alternate ease-in-out;
+}
+
+@keyframes slide-up {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-90px);
+    }
+}
+
+@keyframes slide-down {
+    0%, 100% {
+        transform: translateY(-550px);
+    }
+    50% {
+        transform: translateY(90px);
+    }
+}
+
+.comment-padding {
+    padding: 0 6.5625% 6.5625%;
+}
+
+.animated-comment {
+    transition: transform 1s ease-in-out;
+    filter: brightness(0.8);
+}
+
+.animate {
+    transform: translateY(-100%);
+}
+</style>
+
+
+<script>
+
+
+async function loadScripts() {
+    await import('https://unpkg.com/counterup2@2.0.2/dist/index.js');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                loadScripts().then(() => {
+                    const el = document.getElementById('numberSubs');
+                    if (el && window.counterUp) {
+                        const counter = window.counterUp.default;
+                        counter(el, {
+                            duration: 2000,
+                            delay: 16,
+                        });
+                    }
+                });
+                observer.disconnect();
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    const target = document.querySelector('.container-recommendation');
+    if (target) {
+        observer.observe(target);
+    }
+});
+
+
+    // JavaScript para agregar la clase de animación a los comentarios
+    const comments = document.querySelectorAll('.animated-comment');
+    setInterval(() => {
+      comments.forEach(comment => {
+        comment.classList.toggle('animate');
+      });
+    }, 5000); // Cambia el comentario cada 5 segundos (ajusta según sea necesario)
+
+    class UserComment extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+        this.render();
+    }
+
+    render() {
+        const shadow = this.shadowRoot;
+
+        // Create wrapper
+        const wrapper = document.createElement('div');
+        wrapper.setAttribute('class', 'comment-box');
+
+        // Check if photo should be displayed
+        const showPhoto = this.hasAttribute('show-photo');
+        const borderType = this.getAttribute('photo-border') || 'none';
+        const isOnline = this.hasAttribute('online');
+
+        // Create user photo container with skeleton if show-photo is present
+        let photoContainer;
+        if (showPhoto) {
+            photoContainer = document.createElement('div');
+            photoContainer.setAttribute('class', 'photo-container');
+
+            const imgWrapper = document.createElement('div');
+            imgWrapper.setAttribute('class', 'img-wrapper');
+
+            const img = document.createElement('img');
+            img.setAttribute('class', 'user-photo loading');
+            img.src = this.getAttribute('photo');
+            img.alt = 'User Photo';
+            img.loading = 'lazy';
+
+            img.onerror = () => {
+                img.src = 'default-photo.jpg'; // Default skeleton image
+                img.classList.remove('loading');
+            };
+
+            img.onload = () => {
+                img.classList.remove('loading');
+            };
+
+            imgWrapper.appendChild(img);
+            photoContainer.appendChild(imgWrapper);
+
+            // Add border based on attribute
+            switch (borderType) {
+                case 'solid':
+                    imgWrapper.style.border = '3px solid #000'; // Example solid border
+                    break;
+                case 'dotted':
+                    imgWrapper.style.border = '3px dotted #000'; // Example dotted border
+                    break;
+                case 'dashed':
+                    imgWrapper.style.border = '3px dashed #000'; // Example dashed border
+                    break;
+                case 'gradient':
+                    imgWrapper.style.border = '3px solid transparent';
+                    imgWrapper.style.borderImage = 'linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)';
+                    imgWrapper.style.borderImageSlice = 1;
+                    break;
+                case 'none':
+                default:
+                    imgWrapper.style.border = 'none'; // No border
+                    break;
+            }
+
+            // Add online status if attribute is present
+            if (isOnline) {
+                const onlineIndicator = document.createElement('div');
+                onlineIndicator.setAttribute('class', 'online-indicator');
+                photoContainer.appendChild(onlineIndicator);
+            }
+        }
+
+        // Create content container
+        const content = document.createElement('div');
+        content.setAttribute('class', 'comment-content');
+
+        // Create user name element
+        const name = document.createElement('p');
+        name.setAttribute('class', 'user-name');
+        name.textContent = this.getAttribute('name');
+
+        // Create optional date element
+        const date = document.createElement('p');
+        date.setAttribute('class', 'comment-date');
+        date.textContent = this.getAttribute('date');
+
+        // Create optional title element
+        const title = document.createElement('p');
+        title.setAttribute('class', 'comment-title');
+        title.textContent = this.getAttribute('title');
+
+        // Create user comment element
+        const comment = document.createElement('p');
+        comment.setAttribute('class', 'user-comment');
+        comment.textContent = this.getAttribute('comment');
+
+        // Create optional stars element
+        const stars = document.createElement('div');
+        stars.setAttribute('class', 'comment-stars');
+        const goodStarCount = parseInt(this.getAttribute('goodStars') || '0');
+        const noGoodStarCount = parseInt(this.getAttribute('noGoodStars') || '0');
+
+        for (let i = 0; i < goodStarCount; i++) {
+            const star = document.createElement('span');
+            star.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-lg sm:text-xl text-warning iconify iconify--solar" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#f5a524" d="M9.153 5.408C10.42 3.136 11.053 2 12 2c.947 0 1.58 1.136 2.847 3.408l.328.588c.36.646.54.969.82 1.182c.28.213.63.292 1.33.45l.636.144c2.46.557 3.689.835 3.982 1.776c.292.94-.546 1.921-2.223 3.882l-.434.507c-.476.557-.715.836-.822 1.18c-.107.345-.071.717.001 1.46l.066.677c.253 2.617.38 3.925-.386 4.506c-.766.582-1.918.051-4.22-1.009l-.597-.274c-.654-.302-.981-.452-1.328-.452c-.347 0-.674.15-1.328.452l-.596.274c-2.303 1.06-3.455 1.59-4.22 1.01c-.767-.582-.64-1.89-.387-4.507l.066-.676c.072-.744.108-1.116 0-1.46c-.106-.345-.345-.624-.821-1.18l-.434-.508c-1.677-1.96-2.515-2.941-2.223-3.882c.293-.941 1.523-1.22 3.983-1.776l.636-.144c.699-.158 1.048-.237 1.329-.45c.28-.213.46-.536.82-1.182z"></path></svg>';
+            stars.appendChild(star);
+        }
+
+        for (let i = 0; i < noGoodStarCount; i++) {
+            const star = document.createElement('span');
+            star.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-lg sm:text-xl text-default-200 iconify iconify--solar" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#3f3f46" d="M9.153 5.408C10.42 3.136 11.053 2 12 2c.947 0 1.58 1.136 2.847 3.408l.328.588c.36.646.54.969.82 1.182c.28.213.63.292 1.33.45l.636.144c2.46.557 3.689.835 3.982 1.776c.292.94-.546 1.921-2.223 3.882l-.434.507c-.476.557-.715.836-.822 1.18c-.107.345-.071.717.001 1.46l.066.677c.253 2.617.38 3.925-.386 4.506c-.766.582-1.918.051-4.22-1.009l-.597-.274c-.654-.302-.981-.452-1.328-.452c-.347 0-.674.15-1.328.452l-.596.274c-2.303 1.06-3.455 1.59-4.22 1.01c-.767-.582-.64-1.89-.387-4.507l.066-.676c.072-.744.108-1.116 0-1.46c-.106-.345-.345-.624-.821-1.18l-.434-.508c-1.677-1.96-2.515-2.941-2.223-3.882c.293-.941 1.523-1.22 3.983-1.776l.636-.144c.699-.158 1.048-.237 1.329-.45c.28-.213.46-.536.82-1.182z"></path></svg>';
+            stars.appendChild(star);
+        }
+
+        // Append elements
+        if (showPhoto) {
+            wrapper.appendChild(photoContainer);
+        }
+        content.appendChild(name);
+        if (this.hasAttribute('date')) {
+            content.appendChild(date);
+        }
+        if (goodStarCount > 0 || noGoodStarCount > 0) {
+            content.appendChild(stars);
+        }
+        if (this.hasAttribute('title')) {
+            content.appendChild(title);
+        }
+        content.appendChild(comment);
+        wrapper.appendChild(content);
+        shadow.appendChild(wrapper);
+
+        // Apply styles
+        this.applyStyles(shadow);
+    }
+
+    applyStyles(shadow) {
+        const hasGradientBorder = this.hasAttribute('gradient-border');
+        const gradientColor = this.getAttribute('gradient-color') || 'linear-gradient(to right bottom, rgb(244, 244, 245), rgb(63, 63, 70))';
+        const style = document.createElement('style');
+        style.textContent = `
+            .comment-box {
+                position: relative;
+                display: flex;
+                align-items: center;
+                background-color: #1e1e1e;
+                border-radius: 8px;
+                padding: 10px;
+                max-width: 100%;
+                width: 400px;
+                margin: 20px auto;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                transition: transform 0.2s;
+                box-sizing: border-box;
+            }
+            .photo-container {
+                flex: 0 0 60px;
+                position: relative;
+                width: 60px;
+                height: 60px;
+                margin-right: 15px;
+            }
+            .img-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+                padding: 2px; /* Space for the border */
+            }
+            .user-photo {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: #555;
+                transition: opacity 0.3s, border 0.3s;
+            }
+            .user-photo.loading {
+                background: linear-gradient(90deg, #ececec, #f3f3f3, #ececec);
+                background-size: 200% 100%;
+                animation: loading 1.5s infinite;
+            }
+            .online-indicator {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                width: 15px;
+                height: 15px;
+                background-color: #4CAF50; /* Green color for online status */
+                border: 2px solid white; /* Border to separate the indicator from the photo */
+                border-radius: 50%;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+            @keyframes loading {
+                0% {
+                    background-position: 200% 0;
+                }
+                100% {
+                    background-position: -200% 0;
+                }
+            }
+            .comment-content {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+            .user-name {
+                font-weight: bold;
+                margin: 0;
+                color: #ffffff;
+            }
+            .comment-date {
+                font-size: 0.8em;
+                color: #cccccc; /* Less intense white */
+                margin: 0 0 5px 0;
+            }
+            .comment-title {
+                font-size: 1.1em;
+                font-weight: bold;
+                color: transparent;
+                background: ${gradientColor};
+                -webkit-background-clip: text;
+                background-clip: text;
+                margin: 5px 0;
+            }
+            .comment-stars {
+                color: gold;
+                margin: 5px 0;
+                display: flex;
+            }
+            .comment-stars span {
+                margin-right: 2px;
+            }
+            .user-comment {
+                margin: 0;
+                word-wrap: break-word;
+                color: #cccccc; /* Less intense white */
+            }
+            @media (max-width: 500px) {
+                .comment-box {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .photo-container {
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                }
+            }
+            .comment-box[halo="true"] .user-photo {
+                border: 2px solid #4CAF50; /* Green border */
+            }
+            ${hasGradientBorder ? `
+            .comment-box::before {
+                content: "";
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                bottom: -2px;
+                left: -2px;
+                z-index: -1;
+                background: linear-gradient(rgb(5, 7, 19), rgb(5, 7, 19)), linear-gradient(to right, rgb(245, 65, 128), rgb(51, 142, 247));
+                background-clip: padding-box, border-box;
+                background-origin: padding-box, border-box;
+                border: 2px solid transparent;
+                border-radius: 10px;
+            }` : ''}
+        `;
+        shadow.appendChild(style);
+    }
+}
+
+customElements.define('user-comment', UserComment);
+
+</script>
