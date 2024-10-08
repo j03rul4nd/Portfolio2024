@@ -17,6 +17,8 @@ ogImagePath: /images/blog/terrain3dgenerator/2024-09-20_23-21-33.gif
 
 [Try the app here!](https://create3dterrainmaps.vercel.app/)
 
+![4](/images/blog/terrain3dgenerator/lighthouserenidmient.PNG)
+
 ## Solving a Real Problem with Advanced Technology
 
 This project was born out of a personal need: to plan my off-piste skiing trip to **Niseko, Japan**. I faced a significant challenge: the available maps were neither accurate nor detailed enough to ensure my safety in the more challenging areas of the mountain. Leveraging my knowledge in web development and 3D technology, I decided to create my own solution.
