@@ -1,8 +1,8 @@
 ---
 draft: false
 external: false
-title: Let’s Turn Your Idea Into Reality How I Can Bring Your Projects to Life
-description: test
+title: Let’s Turn Your Idea Into Reality, QRLinker
+description: Turning ideas into reality with innovative solutions like QRLinker, custom QR codes with 3D visuals, personalization, and multi-format exports.
 date: 2024-11-25
 ogImagePath: /images/blog/qrlinker/v1.gif
 ---
